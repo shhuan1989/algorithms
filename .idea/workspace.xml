@@ -2,22 +2,117 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c1e34db-51e0-4f61-84bc-b03876241228" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leetcode/hard/Insert_Interval.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leetcode/medium/Wiggle_Sort_2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py/codechef/NOV17_CHEFHPAL.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py/codechef/NOV17_CLRL.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py/codechef/NOV17_PERPALIN.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py/codechef/NOV17_VILTRIBE.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py/codeforces/884A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py/codeforces/884B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py/codeforces/884C.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py/codeforces/884D.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py/codeforces/884E.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py/codeforces/884F.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leetcode/Contest3.py" afterPath="$PROJECT_DIR$/leetcode/Contest3.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leetcode/hard/Distinct_Subsequences.py" afterPath="$PROJECT_DIR$/leetcode/hard/Distinct_Subsequences.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leetcode/hard/Word_Break_II.py" afterPath="$PROJECT_DIR$/leetcode/hard/Word_Break_II.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leetcode/medium/Verify_Preorder_Serialization_of_a_Binary_Tree.py" afterPath="$PROJECT_DIR$/leetcode/medium/Verify_Preorder_Serialization_of_a_Binary_Tree.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/312A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/321B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/321C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/321D.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/321_div2_A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/321_div2_B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/321_div2_C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/354_DVI2_C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/4A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/538A_CuttingBanner.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/538B_QuasiBinary.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/538C_Tourist'sNotes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/538D_WeirdChess.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/540A_CombinationLock.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/540B_SchoolMarks.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/540C_IceCave.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/540D_BadLuckIsland.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/540E_InfiniteInversions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/544A_SetOfString.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/544B_SeaAndIslands.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/558C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/558D.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/559A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/559B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/559C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/841A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/841B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/841C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/842A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/842B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/842C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/844A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/844B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/844C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/844D.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/844E.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/849A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/849B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/849C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/851A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/851B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/851C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/851D.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/854A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/854B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/854C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/854D.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/861A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/861B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/861C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/861D.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/862A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/862B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/862C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/862D.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/864A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/864B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/864C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/864D.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/864E.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/864F.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/865A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/865B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/865C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/867A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/868A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/868B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/868C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/868D.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/868E.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/869A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/869B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/869C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/869D.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/872A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/872B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/872C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/873A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/873B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/873C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/873D.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/873E.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/876E.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/876F.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/877A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/877B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/877C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/877D.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/878A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/879A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/879B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/879C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/879D.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/883E.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/883F.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/883H.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/883M.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/884A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/884B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/884C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/884D.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/884E.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/884F.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/887A.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/887B.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/887C.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/887D.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/887E.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/input.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/py/codeforces/简历.pdf" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,7 +129,7 @@
       <file leaf-file-name="Contest3.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/leetcode/Contest3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
+            <state relative-caret-position="211">
               <caret line="38" column="21" lean-forward="false" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
               <folding />
             </state>
@@ -92,7 +187,7 @@
         </entry>
       </file>
       <file leaf-file-name="884D.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/py/codeforces/884D.py">
+        <entry file="file://$PROJECT_DIR$/codeforces/884D.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
               <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
@@ -122,7 +217,7 @@
         </entry>
       </file>
       <file leaf-file-name="884E.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/py/codeforces/884E.py">
+        <entry file="file://$PROJECT_DIR$/codeforces/884E.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1152">
               <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
@@ -266,7 +361,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -332,18 +427,6 @@
               <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="hard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="medium" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
@@ -593,10 +676,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21748401" sideWeight="0.49448818" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21748401" sideWeight="0.49448818" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -722,42 +804,42 @@
           <option name="timeStamp" value="212" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/867A.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/867A.py</url>
           <line>14</line>
           <option name="timeStamp" value="219" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/865B.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/865B.py</url>
           <line>112</line>
           <option name="timeStamp" value="230" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/865B.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/865B.py</url>
           <line>147</line>
           <option name="timeStamp" value="231" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/865B.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/865B.py</url>
           <line>159</line>
           <option name="timeStamp" value="238" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/865B.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/865B.py</url>
           <line>90</line>
           <option name="timeStamp" value="239" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/864B.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/864B.py</url>
           <line>32</line>
           <option name="timeStamp" value="243" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/864D.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/864D.py</url>
           <line>36</line>
           <option name="timeStamp" value="245" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/864E.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/864E.py</url>
           <line>59</line>
           <option name="timeStamp" value="247" />
         </line-breakpoint>
@@ -767,53 +849,53 @@
           <option name="timeStamp" value="248" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/558D.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/558D.py</url>
           <line>51</line>
           <option name="timeStamp" value="275" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/869D.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/869D.py</url>
           <line>15</line>
           <option name="timeStamp" value="278" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/558D.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/558D.py</url>
           <line>62</line>
           <option name="timeStamp" value="280" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/558D.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/558D.py</url>
           <line>48</line>
           <option name="timeStamp" value="281" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/559C.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/559C.py</url>
           <line>48</line>
           <option name="timeStamp" value="282" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <condition expression="i == 3" language="Python" />
-          <url>file://$PROJECT_DIR$/py/codeforces/862C.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/862C.py</url>
           <line>36</line>
           <option name="timeStamp" value="307" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/862D.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/862D.py</url>
           <line>29</line>
           <option name="timeStamp" value="308" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/869C.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/869C.py</url>
           <line>20</line>
           <option name="timeStamp" value="309" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/873D.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/873D.py</url>
           <line>36</line>
           <option name="timeStamp" value="318" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/869D.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/869D.py</url>
           <line>51</line>
           <option name="timeStamp" value="320" />
         </line-breakpoint>
@@ -853,52 +935,52 @@
           <option name="timeStamp" value="400" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/876F.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/876F.py</url>
           <line>22</line>
           <option name="timeStamp" value="407" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/876F.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/876F.py</url>
           <line>41</line>
           <option name="timeStamp" value="416" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/861C.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/861C.py</url>
           <line>37</line>
           <option name="timeStamp" value="422" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/861C.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/861C.py</url>
           <line>36</line>
           <option name="timeStamp" value="423" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/854C.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/854C.py</url>
           <line>38</line>
           <option name="timeStamp" value="426" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/854D.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/854D.py</url>
           <line>34</line>
           <option name="timeStamp" value="431" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/854D.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/854D.py</url>
           <line>81</line>
           <option name="timeStamp" value="433" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/851D.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/851D.py</url>
           <line>41</line>
           <option name="timeStamp" value="434" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/844C.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/844C.py</url>
           <line>19</line>
           <option name="timeStamp" value="436" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/844E.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/844E.py</url>
           <line>74</line>
           <option name="timeStamp" value="441" />
         </line-breakpoint>
@@ -913,92 +995,92 @@
           <option name="timeStamp" value="450" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/883E.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/883E.py</url>
           <line>34</line>
           <option name="timeStamp" value="460" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/883H.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/883H.py</url>
           <line>78</line>
           <option name="timeStamp" value="468" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/883H.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/883H.py</url>
           <line>18</line>
           <option name="timeStamp" value="470" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/879B.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/879B.py</url>
           <line>27</line>
           <option name="timeStamp" value="475" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/877A.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/877A.py</url>
           <line>21</line>
           <option name="timeStamp" value="512" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/877A.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/877A.py</url>
           <line>33</line>
           <option name="timeStamp" value="513" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/877D.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/877D.py</url>
           <line>57</line>
           <option name="timeStamp" value="517" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/887C.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/887C.py</url>
           <line>20</line>
           <option name="timeStamp" value="531" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/887C.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/887C.py</url>
           <line>30</line>
           <option name="timeStamp" value="532" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/887C.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/887C.py</url>
           <line>35</line>
           <option name="timeStamp" value="533" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/887C.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/887C.py</url>
           <line>55</line>
           <option name="timeStamp" value="534" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/887C.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/887C.py</url>
           <line>39</line>
           <option name="timeStamp" value="535" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/887D.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/887D.py</url>
           <line>56</line>
           <option name="timeStamp" value="537" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/887E.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/887E.py</url>
           <line>146</line>
           <option name="timeStamp" value="563" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/887E.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/887E.py</url>
           <line>107</line>
           <option name="timeStamp" value="565" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/887E.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/887E.py</url>
           <line>122</line>
           <option name="timeStamp" value="567" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/887E.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/887E.py</url>
           <line>81</line>
           <option name="timeStamp" value="568" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/887E.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/887E.py</url>
           <line>78</line>
           <option name="timeStamp" value="569" />
         </line-breakpoint>
@@ -1033,7 +1115,7 @@
           <option name="timeStamp" value="619" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/884F.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/884F.py</url>
           <line>44</line>
           <option name="timeStamp" value="641" />
         </line-breakpoint>
@@ -1043,7 +1125,7 @@
           <option name="timeStamp" value="653" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/py/codeforces/884E.py</url>
+          <url>file://$PROJECT_DIR$/codeforces/884E.py</url>
           <line>57</line>
           <option name="timeStamp" value="660" />
         </line-breakpoint>
@@ -1074,7 +1156,7 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/py/codeforces/877D.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/877D.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
@@ -1096,21 +1178,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py/codeforces/887A.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/887A.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py/codeforces/887B.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/887B.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py/codeforces/887D.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/887D.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
           <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
@@ -1118,7 +1200,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py/codeforces/887C.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/887C.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="774">
           <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
@@ -1133,7 +1215,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py/codeforces/887E.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/887E.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
@@ -1176,7 +1258,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py/codeforces/878A.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/878A.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
@@ -1328,21 +1410,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py/codeforces/884A.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/884A.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py/codeforces/884B.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/884B.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py/codeforces/884F.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/884F.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
           <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="5" />
@@ -1350,7 +1432,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py/codeforces/884C.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/884C.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="28" column="72" lean-forward="false" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
@@ -1412,7 +1494,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py/codeforces/884E.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/884E.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1152">
           <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
@@ -1420,7 +1502,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py/codeforces/884D.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/884D.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
@@ -1446,7 +1528,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/leetcode/Contest3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
+        <state relative-caret-position="211">
           <caret line="38" column="21" lean-forward="false" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
           <folding />
         </state>

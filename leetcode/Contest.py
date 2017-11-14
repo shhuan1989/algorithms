@@ -13,32 +13,41 @@ created by shhuan at 2017/10/8 09:18
 """
 
 
+# Definition for singly-linked list.
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+
 class Solution(object):
-    def maxNumber(self, nums1, nums2, k):
+    def countOfAtoms(self, formula):
         """
-        :type nums1: List[int]
-        :type nums2: List[int]
-        :type k: int
-        :rtype: List[int]
+        :type formula: str
+        :rtype: str
         """
 
-        def prep(nums, k):
-            drop = len(nums) - k
-            out = []
-            for num in nums:
-                while drop and out and out[-1] < num:
-                    out.pop()
-                    drop -= 1
-                out.append(num)
-            return out[:k]
-
-        def merge(a, b):
-            return [max(a, b).pop(0) for _ in a + b]
-
-        return max(merge(prep(nums1, i), prep(nums2, k - i))
-                   for i in range(k + 1)
-                   if i <= len(nums1) and k - i <= len(nums2))
 
 
-s = Solution()
-print(s.maxNumber([6,7], [6,0,4], 5))
+        def dfs(fm):
+
+            i = 0
+            count = collections.defaultdict(int)
+            while i < len(fm) and fm[i] != '(' and fm != ')':
+                if fm[i].isupper():
+                    j = i + 1
+                    while j < len(fm) and fm[j].islower():
+                        j += 1
+                    e = fm[i:j]
+                    k = j
+                    while k < len(fm) and fm[k].isnumeric():
+                        k += 1
+                    if k > j:
+                        count[e] = int(fm[j: k])
+                    else:
+                        count[e] = 1
+                    i = k
+                else:
+                    i += 1
+
+

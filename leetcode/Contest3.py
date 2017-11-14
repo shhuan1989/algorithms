@@ -13,43 +13,57 @@ created by shhuan at 2017/9/24 09:55
 """
 
 
-class Solution(object):
-    def validUtf8(self, data):
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+
+class Solution:
+    def findMin(self, nums):
         """
-        :type data: List[int]
-        :rtype: bool
+        :type nums: List[int]
+        :rtype: int
         """
 
-        data = [list('0' * (8 - len(v))) + v for v in [list(bin(v)[2:]) for v in data]]
+        A = nums
+        if not A:
+            return None
 
-        print(data)
-        index = 0
-        while index < len(data):
-            d = data[index]
-            if d[0] == '0':
-                index += 1
-                continue
+        N = len(A)
+        lo = 0
+        hi = N
 
-            n = -1
-            if d[:4].count('1') == 4 and d[4] == '0':
-                n = 4
-            elif d[:3].count('1') == 3 and d[3] == '0':
-                n = 3
-            elif d[:2].count('1') == 2 and d[2] == '0':
-                n = 2
-            if n > 0:
-                if index + n <= len(data):
-                    for i in range(index + 1, index + n):
-                        if data[i][:2] != ['1', '0']:
-                            return False
+        while lo < hi:
+            m = (lo + hi) // 2
+
+            if A[m] > A[lo]:
+                if m >= N - 1:
+                    return A[lo]
+                elif A[m] > A[hi-1]:
+                  lo = m + 1
                 else:
-                    return False
-                index += n
-
+                    hi = m
             else:
-                return False
+                if m > lo and A[m] < A[m-1]:
+                    return A[m]
+                elif A[m] < A[hi-1]:
+                    hi = m
+                else:
+                    lo = m+1
 
-        return True
+        return A[lo-1]
+
+
+
+
 
 s = Solution()
-print(s.validUtf8([145]))
+print(s.findMin([4, 5, 6, 7, 0, 1, 2, 3]))
+print(s.findMin([1]))
+print(s.findMin([1, 2, 3]))
+print(s.findMin([2, 3, 0, 1]))
+print(s.findMin([2, 3, 4, 0, 1]))
+print(s.findMin([3, 4, 0, 1, 2]))

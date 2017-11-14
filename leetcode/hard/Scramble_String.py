@@ -45,6 +45,7 @@ __author__ = 'huash'
 
 import sys
 import os
+import collections
 
 class Solution:
     # @param {string} s1
@@ -84,6 +85,47 @@ class Solution:
             if self.isScramble(s1[:i], s2[len(s2)-i:]) and self.isScramble(s1[i:], s2[:len(s2)-i]):
                 return True
         return False
+
+    def isScramble2(self, s1, s2):
+        """
+        :type s1: str
+        :type s2: str
+        :rtype: bool
+        """
+
+        def check(s1, s2):
+            if s1 == s2:
+                return True
+
+            if len(s1) != len(s2):
+                return False
+
+            n = len(s1)
+            if n == 1:
+                return s1 == s2
+
+
+            wc1 = collections.defaultdict(int)
+            wc2 = collections.defaultdict(int)
+            wc3 = collections.defaultdict(int)
+            for i in range(n-1):
+                a = s1[i]
+                b = s2[i]
+                wc1[a] += 1
+                wc2[b] += 1
+                if wc1 == wc2:
+                    if check(s1[:i+1], s2[:i+1]) and check(s1[i+1:], s2[i+1:]):
+                        return True
+
+                c = s2[n-i-1]
+                wc3[c] += 1
+                if wc1 == wc3:
+                    if check(s1[:i+1], s2[n-i-1:]) and check(s1[i+1:], s2[:n-i-1]):
+                        return True
+
+            return False
+
+        return check(s1, s2)
 
 
 

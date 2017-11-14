@@ -28,7 +28,29 @@ def tob(valChar):
     v = ['0'] * (4-len(v)) + v
     return v
 
+
 def one_index(a, r):
+    ones = [0] * N
+    for c in range(N // 4):
+        v = tob(a[r][c])
+        for i in range(4):
+            if v[i] == '1':
+                ones[c*4+i] = 1
+
+    groups = set()
+    if ones[0] != 0:
+        groups.add(1)
+    for i in range(1, N):
+        if ones[i] == 1:
+            if ones[i-1] != 0:
+                ones[i] = ones[i-1]
+            else:
+                ones[i] = i + 1
+                groups.add(i + 1)
+
+    return ones, groups
+
+def one_index2(a, r):
     ones = []
     for c in range(N // 4):
         v = tob(a[r][c])
@@ -54,27 +76,41 @@ def one_index(a, r):
 
 ans = 0
 
-last_ones = one_index(A, 0)
+
+last_ones, last_groups = one_index(A, 0)
 for r in range(1, M):
-    ones = one_index(A, r)
+    ones, groups = one_index(A, r)
+    rep = {}
+    for i in range(N):
+        x, y = last_ones[i], ones[i]
+        if x != 0 and y != 0:
+            if x not in rep:
+                rep[x] = y
+            else:
+                rep[x] = min(rep[x], y)
 
-    # merge
-    for one in last_ones:
-        # if one not in ones, ans += 1
-        m = bisect.bisect_right(ones, one)
-        inone = False
-        if 0 <= m <= len(ones):
-            if m > 0 and ones[m-1][1] >= one[0] >= ones[m-1][0]:
-                inone = True
-            elif m < len(ones) and ones[m][0] <= one[1]:
-                inone = True
-        if not inone:
-            ans += 1
+    for i in range(N):
+        x, y = last_ones[i], ones[i]
+        if x != 0 and y != 0:
+            last_groups -= {x}
+            rx = rep[x]
+            if y != rx:
+                groups -= {y}
+                ones[i] = rx
+                j = i-1
+                while j >= 0 and ones[j] != rx and ones[j] != 0:
+                    ones[j] = rx
+                    j -= 1
+                j = i+1
+                while j < N and ones[j] != rx and ones[j] != 0:
+                    ones[j] = rx
+                    j += 1
 
-    last_ones = ones
+    ans += len(last_groups)
+    last_ones, last_groups = ones, groups
 
 
-print(ans + len(last_ones))
+print(ans + len(last_groups))
 
 
 

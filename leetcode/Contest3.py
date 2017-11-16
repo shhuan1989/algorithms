@@ -13,57 +13,66 @@ created by shhuan at 2017/9/24 09:55
 """
 
 
-# Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-
 class Solution:
-    def findMin(self, nums):
+    def addOperators(self, num, target):
         """
-        :type nums: List[int]
-        :rtype: int
+        :type num: str
+        :type target: int
+        :rtype: List[str]
         """
+        if not num:
+            return []
 
-        A = nums
-        if not A:
-            return None
+        def cal(exp):
+            if not exp:
+                return 0
 
-        N = len(A)
-        lo = 0
-        hi = N
-
-        while lo < hi:
-            m = (lo + hi) // 2
-
-            if A[m] > A[lo]:
-                if m >= N - 1:
-                    return A[lo]
-                elif A[m] > A[hi-1]:
-                  lo = m + 1
+            s = []
+            for i, v in enumerate(exp):
+                if s and s[-1] == '*':
+                    s.pop()
+                    a = s.pop()
+                    s.append(a * v)
                 else:
-                    hi = m
-            else:
-                if m > lo and A[m] < A[m-1]:
-                    return A[m]
-                elif A[m] < A[hi-1]:
-                    hi = m
+                    s.append(v)
+            exp = s
+            s = []
+            for i, v in enumerate(exp):
+                if s and s[-1] in ['+', '-']:
+                    op = s.pop()
+                    a = s.pop()
+                    if op == '+':
+                        s.append(a + v)
+                    else:
+                        s.append(a - v)
                 else:
-                    lo = m+1
+                    s.append(v)
 
-        return A[lo-1]
+            return s[0]
 
+        def dfs(A, N, T, I, P):
+            if I >= N:
+                if cal(P) == T:
+                    return ["".join(map(str, P))]
+                else:
+                    return []
 
+            ans = []
+            for op in ['+', '-', '*']:
+                ans.extend(dfs(A, N, T, I + 1, P + [op, A[I]]))
 
+            if P and P[-1] != 0:
+                last = P[-1] * 10 + A[I]
+                ans.extend(dfs(A, N, T, I + 1, P[:-1] + [last]))
+
+            return ans
+
+        return dfs([int(x) for x in list(num)], len(num), target, 1, [int(num[0])])
 
 
 s = Solution()
-print(s.findMin([4, 5, 6, 7, 0, 1, 2, 3]))
-print(s.findMin([1]))
-print(s.findMin([1, 2, 3]))
-print(s.findMin([2, 3, 0, 1]))
-print(s.findMin([2, 3, 4, 0, 1]))
-print(s.findMin([3, 4, 0, 1, 2]))
+print(s.addOperators("123", 6))
+print(s.addOperators("105", 5))
+print(s.addOperators("232", 8))
+print(s.addOperators("00", 0))
+print(s.addOperators("3456237490", 9191))

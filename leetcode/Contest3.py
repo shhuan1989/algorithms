@@ -12,67 +12,36 @@ created by shhuan at 2017/9/24 09:55
 
 """
 
+N = int(input())
 
-class Solution:
-    def addOperators(self, num, target):
-        """
-        :type num: str
-        :type target: int
-        :rtype: List[str]
-        """
-        if not num:
-            return []
+A = []
+for i in range(N):
+    w = input()
+    wc = collections.Counter(w)
+    if any(v > 1 for v in wc.values()):
+        print("NO")
+        exit(0)
+    A.append(w)
 
-        def cal(exp):
-            if not exp:
-                return 0
+E = {}
+degree = collections.defaultdict(int)
+chars = set()
+for w in A:
+    chars |= set(w)
+    for i in range(len(w)-1):
+        v = w[i]
+        if v not in E:
+            E[v] = w[i+1]
+            degree[w[i+1]] += 1
+        else:
+            if E[v] != w[i+1]:
+                print("NO")
+                exit(0)
 
-            s = []
-            for i, v in enumerate(exp):
-                if s and s[-1] == '*':
-                    s.pop()
-                    a = s.pop()
-                    s.append(a * v)
-                else:
-                    s.append(v)
-            exp = s
-            s = []
-            for i, v in enumerate(exp):
-                if s and s[-1] in ['+', '-']:
-                    op = s.pop()
-                    a = s.pop()
-                    if op == '+':
-                        s.append(a + v)
-                    else:
-                        s.append(a - v)
-                else:
-                    s.append(v)
+ans = ""
+for start in [c for c in chars if degree[c] == 0]:
+    while start:
+        ans += start
+        start = E[start] if start in E else ""
 
-            return s[0]
-
-        def dfs(A, N, T, I, P):
-            if I >= N:
-                if cal(P) == T:
-                    return ["".join(map(str, P))]
-                else:
-                    return []
-
-            ans = []
-            for op in ['+', '-', '*']:
-                ans.extend(dfs(A, N, T, I + 1, P + [op, A[I]]))
-
-            if P and P[-1] != 0:
-                last = P[-1] * 10 + A[I]
-                ans.extend(dfs(A, N, T, I + 1, P[:-1] + [last]))
-
-            return ans
-
-        return dfs([int(x) for x in list(num)], len(num), target, 1, [int(num[0])])
-
-
-s = Solution()
-print(s.addOperators("123", 6))
-print(s.addOperators("105", 5))
-print(s.addOperators("232", 8))
-print(s.addOperators("00", 0))
-print(s.addOperators("3456237490", 9191))
+print(ans)

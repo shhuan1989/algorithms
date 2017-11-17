@@ -14,76 +14,28 @@ created by shhuan at 2017/10/5 15:00
 
 H, M, S, t1, t2 = map(int, input().split())
 
-# 0 - 11.999999999
 
-if M != 0 or S != 0:
-    H += 0.1
+# 12 * 60 * 60 positions
+h = (H % 12)*60*60 + M*60 + S
+m = M*12*60 + S*12
+s = S * 12 * 60
 
-M = M * 12 / 60
-S = S * 12 / 60
+t1 = (t1 % 12) * 3600
+t2 = (t2 % 12) * 3600
 
-t1b, t2b = t1, t2
-
-over = False
-while t1 != t2:
-    if t1 < 12:
-        if t1 < H < t1+1 or t1 < M < t1+1 or t1 < S < t1+1:
-            over = True
-            break
-        if t1+1 == t2:
-            break
-        else:
-            if t1+1 == H or t1+1 == M or t1+1 == S:
-                over = True
-                break
-        t1 += 1
-    else:
-        t1 = 1
-        if 12 < H < 13 or 0 < M < 1 or 0 < S < 1:
-            over = True
-            break
-        if t1 == t2:
-            break
-        else:
-            if H == 1 or M == 1 or S == 1:
-                over = True
-                break
-if not over:
-    print('YES')
-else:
-    t1, t2 = t1b, t2b
-    over = False
-    while t1 != t2:
-        if t1 > 1:
-            if t1 > H > t1-1 or t1 > M > t1-1 or t1 > S > t1-1:
-                over = True
-                break
-            if t1-1 == t2:
-                break
-            else:
-                if t1-1 == H or t1-1 == M or t1-1 == S:
-                    over = True
-                    break
-            t1 -= 1
-        else:
-            t1 = 12
-            if 12 < H < 13 or 0 < M < 1 or 0 < S < 1:
-                over = True
-                break
-            if t1 == t2:
-                break
-            else:
-                if H == 12 or M == 0 or S == 0:
-                    over = True
-                    break
-    if not over:
-        print('YES')
-    else:
-        print('NO')
+if t1 > t2:
+    t1, t2 = t2, t1
 
 
+if not (t1 < h < t2 or t1 < m < t2 or t1 < s < t2):
+    print("YES")
+    exit(0)
 
+if not((t2 < h or h < t1) or (t2 < m or m < t1) or (t2 < s or s < t1)):
+    print("YES")
+    exit(0)
 
+print("NO")
 
 
 

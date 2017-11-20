@@ -9,7 +9,7 @@ import random
 
 """
 created by shhuan at 2017/10/8 09:18
-    
+
 """
 
 # N = int(input())
@@ -21,12 +21,11 @@ created by shhuan at 2017/10/8 09:18
 N = random.randint(1, 15)
 A = set()
 for i in range(N):
-    s = ''.join([chr(ord('a')+random.randint(0, 25)) for _ in range(random.randint(1, 100))])
+    s = ''.join([chr(ord('a') + random.randint(0, 25)) for _ in range(random.randint(1, 100))])
     A.add(s)
 
 print(N)
 print(A)
-
 
 rem = set()
 for v in A:
@@ -51,16 +50,15 @@ for i in range(N):
                 break
         overlap[(i, j)] = l
 
-
 # f(i, j) => f(i, k)
 # f(i|(1<<k), k) = max{f(i|(1<<k), k), f(i, j)+overlap(j, k)}
 
-dp = [[float('-inf') for _ in range(N)] for _ in range(2**N+1)]
+dp = [[float('-inf') for _ in range(N)] for _ in range(2 ** N + 1)]
 
 for i in range(N):
-    dp[1<<i][i] = 0
+    dp[1 << i][i] = 0
 
-for i in range(2**N+1):
+for i in range(2 ** N + 1):
     for j in range(N):
         if i & (1 << j) == 0:
             continue
@@ -70,13 +68,12 @@ for i in range(2**N+1):
             ni = i | (1 << k)
             dp[ni][k] = max(dp[ni][k], dp[i][j] + overlap[(j, k)])
 
-
 # print(A)
 # print(overlap)
 # print(sum([len(v) for v in A] or [0]))
 # print(max(dp[2**N-1]))
 
-print(sum([len(v) for v in A] or [0]) - max(dp[2**N-1]))
+print(sum([len(v) for v in A] or [0]) - max(dp[2 ** N - 1]))
 
 
 

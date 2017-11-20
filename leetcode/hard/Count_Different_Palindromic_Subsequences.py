@@ -6,19 +6,22 @@ import bisect
 import heapq
 import time
 import random
+import itertools
+import sys
 
 """
-created by shhuan at 2017/9/24 09:55
+created by shhuan at 2017/11/19 12:34
+
+
+
+从两边向中间构建回文串。
+
+即第1和最后一字符都是a-z，然后第二和倒数第二个是a-z，。。。
+
+
+
 
 """
-
-
-# Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
 
 class Solution(object):
     def countPalindromicSubsequences(self, S):
@@ -29,7 +32,7 @@ class Solution(object):
 
         N = len(S)
         s = [0] + [ord(v)-ord('a') for v in S]
-        MAXN = 1010
+        MAXN = N+2
         CSZ = 26
 
         nxt = [[0 for _ in range(CSZ)] for _ in range(MAXN)]

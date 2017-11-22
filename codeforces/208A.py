@@ -6,10 +6,13 @@ import bisect
 import heapq
 import time
 import random
+import itertools
+import sys
 
 """
-created by shhuan at 2017/10/15 22:16
+created by shhuan at 2017/11/22 00:05
 
 """
+S = input()
 
-
+print(" ".join(S.split("WUB")).strip())

@@ -6,10 +6,14 @@ import bisect
 import heapq
 import time
 import random
+import itertools
+import sys
 
 """
-created by shhuan at 2017/10/15 22:16
+created by shhuan at 2017/11/21 22:30
 
 """
 
+s = input()
 
+print(s[0].upper() + s[1:])

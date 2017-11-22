@@ -43,8 +43,8 @@ import collections
 import itertools
 import math
 
-N, K = [int(x) for x in raw_input().split()]
-S = raw_input()
+N, K = [int(x) for x in input().split()]
+S = input()
 
 def find(N, K, S, ch):
     if not S:
@@ -75,4 +75,4 @@ def find(N, K, S, ch):
         result = max(result, crange[1] - crange[0])
     return result
 
-print max(find(N, K, S, 'a'), find(N, K, S, 'b'))
+print(max(find(N, K, S, 'a'), find(N, K, S, 'b')))

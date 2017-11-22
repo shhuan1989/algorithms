@@ -12,71 +12,54 @@ created by shhuan at 2017/10/8 09:18
     
 """
 
-# N = int(input())
-#
-# A = set()
-# for i in range(N):
-#     A.add(input().strip())
 
-N = random.randint(1, 15)
-A = set()
-for i in range(N):
-    s = ''.join([chr(ord('a')+random.randint(0, 25)) for _ in range(random.randint(1, 100))])
-    A.add(s)
+# Definition for a binary tree node.
+class TreeNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
 
-print(N)
-print(A)
+class Solution(object):
+    def generateTrees(self, n):
+        """
+        :type n: int
+        :rtype: List[TreeNode]
+        """
 
+        def dfs(l, r):
+            if l == r:
+                return [TreeNode(l)]
+            elif l > r:
+                return []
+            ans = []
+            for i in range(l, r + 1):
+                lefts = dfs(l, i - 1)
+                rights = dfs(i + 1, r)
 
-rem = set()
-for v in A:
-    for u in A:
-        if u != v and u.find(v) >= 0:
-            rem.add(v)
+                if not lefts and not rights:
+                    ans.append(TreeNode(i))
+                elif not lefts:
+                    for right in rights:
+                        root = TreeNode(i)
+                        root.right = right
+                        ans.append(root)
+                elif not rights:
+                    for left in lefts:
+                        root = TreeNode(i)
+                        root.left = left
+                        ans.append(root)
+                else:
 
-A -= rem
-A = list(A)
-N = len(A)
+                    for left in lefts:
+                        for right in rights:
+                            root = TreeNode(i)
+                            root.left = left
+                            root.right = right
+                            ans.append(root)
+            return ans
 
-overlap = collections.defaultdict(int)
-for i in range(N):
-    for j in range(N):
-        if i == j:
-            continue
-        u, v = A[i], A[j]
-        l = 0
-        for k in range(min(len(u), len(v)), 0, -1):
-            if u[-k:] == v[:k]:
-                l = k
-                break
-        overlap[(i, j)] = l
-
-
-# f(i, j) => f(i, k)
-# f(i|(1<<k), k) = max{f(i|(1<<k), k), f(i, j)+overlap(j, k)}
-
-dp = [[float('-inf') for _ in range(N)] for _ in range(2**N+1)]
-
-for i in range(N):
-    dp[1<<i][i] = 0
-
-for i in range(2**N+1):
-    for j in range(N):
-        if i & (1 << j) == 0:
-            continue
-        for k in range(N):
-            if i & (1 << k):
-                continue
-            ni = i | (1 << k)
-            dp[ni][k] = max(dp[ni][k], dp[i][j] + overlap[(j, k)])
-
-
-# print(A)
-# print(overlap)
-# print(sum([len(v) for v in A] or [0]))
-# print(max(dp[2**N-1]))
-
-print(sum([len(v) for v in A] or [0]) - max(dp[2**N-1]))
+        return dfs(1, n)
 
 
 
@@ -89,9 +72,5 @@ print(sum([len(v) for v in A] or [0]) - max(dp[2**N-1]))
 
 
 
-
-
-
-
-
-
+s = Solution()
+s.generateTrees(3)

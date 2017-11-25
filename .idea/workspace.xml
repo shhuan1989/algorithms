@@ -2,63 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c1e34db-51e0-4f61-84bc-b03876241228" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/149A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/155A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/189A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/200B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/230A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/230B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/268B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/270A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/313A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/313B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/327A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/339B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/427A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/432A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/439A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/448A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/455A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/459A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/459B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/466A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/467B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/474A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/474B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/476A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/478A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/489B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/489C.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/490A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/492A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/492B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/4C.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/509A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/513A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/519A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/519B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/556A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/567A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/577A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/579A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/581A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/584A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/588A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/599A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/677A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/703A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/705A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/707A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/711A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/716A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/723A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/732A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/734A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/734B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/750A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/758A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/785A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/791A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/115A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/118B.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/124A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/151A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/1B.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/214A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/255A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/276A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/320A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/330A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/363B.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/368B.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/378A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/37A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/384A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/431A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/441A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/451B.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/454A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/461A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/462A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/463B.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/466C.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/471A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/479C.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/507A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/515C.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/519C.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/527A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/545D.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/546B.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/550A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/552B.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/570A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/572A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/583A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/591A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/598A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/611A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/615A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/621A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/630A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/651A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/659A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/675A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/681A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/686A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/688A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/688B.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/702A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/706A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/719A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/731A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/732B.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/733A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/761A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/764A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/766A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/798A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/804A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/832A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/835A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/839A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/893A.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/893B.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/893C.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/893D.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/893E.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,88 +84,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="230B.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeforces/230B.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="41" column="21" lean-forward="false" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="489B.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeforces/489B.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="474B.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeforces/474B.py">
+      <file leaf-file-name="384A.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeforces/384A.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
-              <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+              <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="439A.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeforces/439A.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="734B.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeforces/734B.py">
+      <file leaf-file-name="255A.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeforces/255A.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
-              <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="459B.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeforces/459B.py">
+      <file leaf-file-name="798A.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeforces/798A.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="40" column="42" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+            <state relative-caret-position="414">
+              <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="567A.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeforces/567A.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="33" column="61" lean-forward="false" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="459A.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeforces/459A.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="785A.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeforces/785A.py">
+      <file leaf-file-name="463B.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeforces/463B.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
               <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
@@ -163,11 +124,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="313B.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/codeforces/313B.py">
+      <file leaf-file-name="320A.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeforces/320A.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="717">
-              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state relative-caret-position="504">
+              <caret line="35" column="12" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="276A.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeforces/276A.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="893C.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeforces/893C.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="893D.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeforces/893D.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="893E.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/codeforces/893E.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-167">
+              <caret line="71" column="13" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NCR.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/NCR.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -184,7 +195,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>100000000</find>
       <find>123456789</find>
       <find>dfacccc</find>
       <find>1,</find>
@@ -214,10 +224,9 @@
       <find>queue with</find>
       <find>d</find>
       <find>print</find>
+      <find>len(s)</find>
     </findStrings>
     <replaceStrings>
-      <replace>NC</replace>
-      <replace>U[</replace>
       <replace>V[</replace>
       <replace>E[</replace>
       <replace>t</replace>
@@ -246,6 +255,8 @@
       <replace>CSZ</replace>
       <replace>int(input())</replace>
       <replace>i</replace>
+      <replace>n</replace>
+      <replace>mx</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\shhuan\Documents\git\algorithms\</dir>
@@ -258,62 +269,62 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/codeforces/200B.py" />
-        <option value="$PROJECT_DIR$/codeforces/705A.py" />
-        <option value="$PROJECT_DIR$/codeforces/492A.py" />
-        <option value="$PROJECT_DIR$/codeforces/155A.py" />
-        <option value="$PROJECT_DIR$/codeforces/723A.py" />
-        <option value="$PROJECT_DIR$/codeforces/750A.py" />
-        <option value="$PROJECT_DIR$/codeforces/581A.py" />
-        <option value="$PROJECT_DIR$/codeforces/732A.py" />
-        <option value="$PROJECT_DIR$/codeforces/4C.py" />
-        <option value="$PROJECT_DIR$/codeforces/584A.py" />
-        <option value="$PROJECT_DIR$/codeforces/189A.py" />
-        <option value="$PROJECT_DIR$/codeforces/432A.py" />
-        <option value="$PROJECT_DIR$/codeforces/427A.py" />
-        <option value="$PROJECT_DIR$/codeforces/268B.py" />
-        <option value="$PROJECT_DIR$/codeforces/321D.py" />
-        <option value="$PROJECT_DIR$/codeforces/478A.py" />
-        <option value="$PROJECT_DIR$/codeforces/71A.py" />
-        <option value="$PROJECT_DIR$/codeforces/327A.py" />
-        <option value="$PROJECT_DIR$/codeforces/707A.py" />
-        <option value="$PROJECT_DIR$/codeforces/489C.py" />
-        <option value="$PROJECT_DIR$/codeforces/519B.py" />
-        <option value="$PROJECT_DIR$/codeforces/703A.py" />
-        <option value="$PROJECT_DIR$/codeforces/711A.py" />
-        <option value="$PROJECT_DIR$/codeforces/509A.py" />
-        <option value="$PROJECT_DIR$/codeforces/490A.py" />
-        <option value="$PROJECT_DIR$/codeforces/579A.py" />
-        <option value="$PROJECT_DIR$/codeforces/577A.py" />
-        <option value="$PROJECT_DIR$/codeforces/556A.py" />
-        <option value="$PROJECT_DIR$/codeforces/599A.py" />
-        <option value="$PROJECT_DIR$/codeforces/270A.py" />
-        <option value="$PROJECT_DIR$/codeforces/758A.py" />
-        <option value="$PROJECT_DIR$/codeforces/474A.py" />
-        <option value="$PROJECT_DIR$/codeforces/149A.py" />
-        <option value="$PROJECT_DIR$/codeforces/588A.py" />
-        <option value="$PROJECT_DIR$/codeforces/476A.py" />
-        <option value="$PROJECT_DIR$/codeforces/791A.py" />
-        <option value="$PROJECT_DIR$/codeforces/448A.py" />
-        <option value="$PROJECT_DIR$/codeforces/513A.py" />
-        <option value="$PROJECT_DIR$/codeforces/519A.py" />
-        <option value="$PROJECT_DIR$/codeforces/467B.py" />
-        <option value="$PROJECT_DIR$/codeforces/716A.py" />
-        <option value="$PROJECT_DIR$/codeforces/230B.py" />
-        <option value="$PROJECT_DIR$/codeforces/489B.py" />
-        <option value="$PROJECT_DIR$/codeforces/474B.py" />
-        <option value="$PROJECT_DIR$/codeforces/734B.py" />
-        <option value="$PROJECT_DIR$/codeforces/439A.py" />
-        <option value="$PROJECT_DIR$/codeforces/459B.py" />
-        <option value="$PROJECT_DIR$/codeforces/567A.py" />
-        <option value="$PROJECT_DIR$/codeforces/459A.py" />
-        <option value="$PROJECT_DIR$/codeforces/785A.py" />
-        <option value="$PROJECT_DIR$/codeforces/313B.py" />
+        <option value="$PROJECT_DIR$/codeforces/659A.py" />
+        <option value="$PROJECT_DIR$/codeforces/688B.py" />
+        <option value="$PROJECT_DIR$/codeforces/431A.py" />
+        <option value="$PROJECT_DIR$/codeforces/1B.py" />
+        <option value="$PROJECT_DIR$/codeforces/527A.py" />
+        <option value="$PROJECT_DIR$/codeforces/368B.py" />
+        <option value="$PROJECT_DIR$/codeforces/466C.py" />
+        <option value="$PROJECT_DIR$/codeforces/641A.py" />
+        <option value="$PROJECT_DIR$/codeforces/651A.py" />
+        <option value="$PROJECT_DIR$/codeforces/118B.py" />
+        <option value="$PROJECT_DIR$/codeforces/471A.py" />
+        <option value="$PROJECT_DIR$/codeforces/151A.py" />
+        <option value="$PROJECT_DIR$/codeforces/839A.py" />
+        <option value="$PROJECT_DIR$/codeforces/515C.py" />
+        <option value="$PROJECT_DIR$/codeforces/761A.py" />
+        <option value="$PROJECT_DIR$/codeforces/611A.py" />
+        <option value="$PROJECT_DIR$/codeforces/688A.py" />
+        <option value="$PROJECT_DIR$/codeforces/764A.py" />
+        <option value="$PROJECT_DIR$/codeforces/461A.py" />
+        <option value="$PROJECT_DIR$/codeforces/363B.py" />
+        <option value="$PROJECT_DIR$/codeforces/441A.py" />
+        <option value="$PROJECT_DIR$/codeforces/519C.py" />
+        <option value="$PROJECT_DIR$/codeforces/479C.py" />
+        <option value="$PROJECT_DIR$/codeforces/706A.py" />
+        <option value="$PROJECT_DIR$/codeforces/115A.py" />
+        <option value="$PROJECT_DIR$/codeforces/832A.py" />
+        <option value="$PROJECT_DIR$/codeforces/570a.py" />
+        <option value="$PROJECT_DIR$/codeforces/570A.py" />
+        <option value="$PROJECT_DIR$/codeforces/545D.py" />
+        <option value="$PROJECT_DIR$/codeforces/598A.py" />
+        <option value="$PROJECT_DIR$/codeforces/702A.py" />
+        <option value="$PROJECT_DIR$/codeforces/552B.py" />
+        <option value="$PROJECT_DIR$/codeforces/546B.py" />
+        <option value="$PROJECT_DIR$/codeforces/572A.py" />
+        <option value="$PROJECT_DIR$/codeforces/378A.py" />
+        <option value="$PROJECT_DIR$/codeforces/454A.py" />
+        <option value="$PROJECT_DIR$/codeforces/766A.py" />
+        <option value="$PROJECT_DIR$/codeforces/681A.py" />
+        <option value="$PROJECT_DIR$/codeforces/835A.py" />
+        <option value="$PROJECT_DIR$/codeforces/675A.py" />
+        <option value="$PROJECT_DIR$/codeforces/462A.py" />
+        <option value="$PROJECT_DIR$/codeforces/384A.py" />
+        <option value="$PROJECT_DIR$/codeforces/591A.py" />
+        <option value="$PROJECT_DIR$/codeforces/804A.py" />
+        <option value="$PROJECT_DIR$/codeforces/255A.py" />
+        <option value="$PROJECT_DIR$/codeforces/798A.py" />
+        <option value="$PROJECT_DIR$/codeforces/463B.py" />
+        <option value="$PROJECT_DIR$/codeforces/320A.py" />
+        <option value="$PROJECT_DIR$/codeforces/276A.py" />
+        <option value="$PROJECT_DIR$/codeforces/893D.py" />
+        <option value="$PROJECT_DIR$/codeforces/893E.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="108" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -367,6 +378,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -382,13 +394,17 @@
             <path>
               <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,8 +439,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.313B">
-    <configuration name="313B" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.893E">
+    <configuration name="276A" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -436,12 +452,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Algorithms" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/313B.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/276A.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="459A" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="320A" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -453,12 +469,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Algorithms" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/459A.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/320A.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="459B" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="463B" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -470,12 +486,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Algorithms" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/459B.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/463B.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="567A" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="893D" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -487,12 +503,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Algorithms" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/567A.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/893D.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="785A" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="893E" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -504,25 +520,25 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Algorithms" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/785A.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/893E.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.459B" />
-      <item index="1" class="java.lang.String" itemvalue="Python.567A" />
-      <item index="2" class="java.lang.String" itemvalue="Python.459A" />
-      <item index="3" class="java.lang.String" itemvalue="Python.785A" />
-      <item index="4" class="java.lang.String" itemvalue="Python.313B" />
+      <item index="0" class="java.lang.String" itemvalue="Python.463B" />
+      <item index="1" class="java.lang.String" itemvalue="Python.320A" />
+      <item index="2" class="java.lang.String" itemvalue="Python.276A" />
+      <item index="3" class="java.lang.String" itemvalue="Python.893D" />
+      <item index="4" class="java.lang.String" itemvalue="Python.893E" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.313B" />
-        <item index="1" class="java.lang.String" itemvalue="Python.785A" />
-        <item index="2" class="java.lang.String" itemvalue="Python.459A" />
-        <item index="3" class="java.lang.String" itemvalue="Python.567A" />
-        <item index="4" class="java.lang.String" itemvalue="Python.459B" />
+        <item index="0" class="java.lang.String" itemvalue="Python.893E" />
+        <item index="1" class="java.lang.String" itemvalue="Python.893D" />
+        <item index="2" class="java.lang.String" itemvalue="Python.276A" />
+        <item index="3" class="java.lang.String" itemvalue="Python.320A" />
+        <item index="4" class="java.lang.String" itemvalue="Python.463B" />
       </list>
     </recent_temporary>
   </component>
@@ -652,22 +668,29 @@
       <option name="project" value="LOCAL" />
       <updated>1511316314040</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add more">
+      <created>1511438900518</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1511438900518</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="108" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20131291" sideWeight="0.49448818" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.202407" sideWeight="0.49448818" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39430448" sideWeight="0.50437635" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39649507" sideWeight="0.49562362" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3253012" sideWeight="0.49562362" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15085287" sideWeight="0.5055118" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44249725" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31872946" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1381,6 +1404,72 @@
           <line>43</line>
           <option name="timeStamp" value="879" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <condition expression="m==3" language="Python" />
+          <url>file://$PROJECT_DIR$/codeforces/733A.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="884" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/codeforces/550A.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="885" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/codeforces/550A.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="886" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/codeforces/893D.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="887" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/codeforces/583A.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="890" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/codeforces/1B.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="894" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/codeforces/1B.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="895" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/codeforces/1B.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="896" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/codeforces/466C.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="899" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/codeforces/552B.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="903" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/codeforces/546B.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="904" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/codeforces/598A.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="905" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/codeforces/320A.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="910" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -1392,7 +1481,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="881" />
+      <option name="time" value="912" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -1405,252 +1494,41 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/codeforces/705A.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/688B.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        <state relative-caret-position="126">
+          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/492A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/155A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/723A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/750A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="29" column="7" lean-forward="false" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/581A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/732A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/4C.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/584A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/189A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="33" column="10" lean-forward="false" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/432A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/427A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/268B.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="28" column="3" lean-forward="false" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/321D.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/478A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/71A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/327A.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/431A.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/707A.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/1B.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="537">
+          <caret line="49" column="26" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+          <folding>
+            <element signature="e#25#36#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/489C.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/527A.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="468">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/519B.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/368B.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/703A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/711A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="37" column="10" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/509A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/490A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/579A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/577A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="26" column="20" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/556A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/599A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/270A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/758A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/474A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/149A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/588A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/476A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/791A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        <state relative-caret-position="504">
+          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1661,107 +1539,272 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/513A.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/466C.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="49" column="22" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/651A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/118B.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/471A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="40" column="15" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/151A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/839A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/515C.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="36" column="21" lean-forward="false" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/761A.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/519A.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/611A.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="44" column="15" lean-forward="false" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
+        <state relative-caret-position="270">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/467B.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="33" column="10" lean-forward="false" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/716A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/231A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/230B.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="41" column="21" lean-forward="false" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/489B.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/474B.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/734B.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/439A.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/688A.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding />
+          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/459B.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/764A.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="40" column="42" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="414">
+          <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/567A.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/461A.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="33" column="61" lean-forward="false" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
-          <folding />
+        <state relative-caret-position="414">
+          <caret line="30" column="9" lean-forward="false" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/459A.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/363B.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        <state relative-caret-position="378">
+          <caret line="28" column="19" lean-forward="false" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/441A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/519C.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/479C.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/706A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/115A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/832A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/570A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/545D.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/598A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/785A.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/702A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="31" column="15" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/552B.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/546B.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/572A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/378A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/454A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/766A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/681A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/835A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/675A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/462A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/591A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/804A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="34" column="14" lean-forward="false" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/255A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/798A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/463B.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
@@ -1769,10 +1812,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/313B.py">
+    <entry file="file://$PROJECT_DIR$/codeforces/320A.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state relative-caret-position="504">
+          <caret line="35" column="12" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/384A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/276A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/893C.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/893D.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/NCR.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/893E.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-167">
+          <caret line="71" column="13" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="13" />
           <folding />
         </state>
       </provider>

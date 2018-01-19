@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c1e34db-51e0-4f61-84bc-b03876241228" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/codeforces/913A.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codeforces/913B.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codeforces/913C.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codeforces/913D.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codeforces/915A.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codeforces/915B.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codeforces/915C.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codeforces/915D.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/Algorithms.iml" afterPath="$PROJECT_DIR$/.idea/Algorithms.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="6c1e34db-51e0-4f61-84bc-b03876241228" name="Default" comment="add more">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -644,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511438900518</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add more">
+      <created>1516344624898</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1516344624898</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">

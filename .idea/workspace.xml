@@ -2,75 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c1e34db-51e0-4f61-84bc-b03876241228" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/115A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/118B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/124A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/151A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/1B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/214A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/255A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/276A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/320A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/330A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/363B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/368B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/378A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/37A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/384A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/431A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/441A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/451B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/454A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/461A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/462A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/463B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/466C.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/471A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/479C.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/507A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/515C.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/519C.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/527A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/545D.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/546B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/550A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/552B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/570A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/572A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/583A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/591A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/598A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/611A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/615A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/621A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/630A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/651A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/659A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/675A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/681A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/686A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/688A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/688B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/702A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/706A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/719A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/731A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/732B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/733A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/761A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/764A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/766A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/798A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/804A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/832A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/835A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/839A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/893A.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/893B.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/893C.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/893D.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codeforces/893E.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeforces/913A.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeforces/913B.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeforces/913C.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeforces/913D.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeforces/915A.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeforces/915B.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeforces/915C.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeforces/915D.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/Algorithms.iml" afterPath="$PROJECT_DIR$/.idea/Algorithms.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,73 +21,105 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/algorithms$915A.coverage" NAME="915A Coverage Results" MODIFIED="1516073305732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeforces" />
+    <SUITE FILE_PATH="coverage/algorithms$915D.coverage" NAME="915D Coverage Results" MODIFIED="1516174371188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeforces" />
+    <SUITE FILE_PATH="coverage/algorithms$915C.coverage" NAME="915C Coverage Results" MODIFIED="1516081460849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeforces" />
+    <SUITE FILE_PATH="coverage/algorithms$913D.coverage" NAME="913D Coverage Results" MODIFIED="1515664808538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeforces" />
+    <SUITE FILE_PATH="coverage/algorithms$913B.coverage" NAME="913B Coverage Results" MODIFIED="1515649807202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeforces" />
+    <SUITE FILE_PATH="coverage/algorithms$915B.coverage" NAME="915B Coverage Results" MODIFIED="1516074994745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeforces" />
+    <SUITE FILE_PATH="coverage/algorithms$913C.coverage" NAME="913C Coverage Results" MODIFIED="1515657786198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeforces" />
+    <SUITE FILE_PATH="coverage/algorithms$913A.coverage" NAME="913A Coverage Results" MODIFIED="1515649160018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeforces" />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="Algorithms" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="384A.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeforces/384A.py">
+      <file leaf-file-name="913A.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeforces/913A.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            <state relative-caret-position="240">
+              <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="255A.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeforces/255A.py">
+      <file leaf-file-name="913B.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeforces/913B.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="798A.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeforces/798A.py">
+      <file leaf-file-name="913C.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeforces/913C.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+            <state relative-caret-position="270">
+              <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="463B.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeforces/463B.py">
+      <file leaf-file-name="913D.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeforces/913D.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+            <state relative-caret-position="336">
+              <caret line="58" column="16" lean-forward="false" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="320A.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeforces/320A.py">
+      <file leaf-file-name="915A.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeforces/915A.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="35" column="12" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+            <state relative-caret-position="405">
+              <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+              <folding>
+                <element signature="e#74#85#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="915B.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeforces/915B.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="276A.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeforces/276A.py">
+      <file leaf-file-name="915C.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeforces/915C.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="149">
+              <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="893C.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeforces/893C.py">
+      <file leaf-file-name="915D.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeforces/915D.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-161">
+              <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1A.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/codeforces/1A.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -154,32 +128,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="893D.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeforces/893D.py">
+      <file leaf-file-name="894C.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeforces/894C.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="893E.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/codeforces/893E.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-167">
-              <caret line="71" column="13" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NCR.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/NCR.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="9" selection-end-column="10" />
+              <folding>
+                <element signature="e#25#36#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -269,15 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/codeforces/659A.py" />
-        <option value="$PROJECT_DIR$/codeforces/688B.py" />
-        <option value="$PROJECT_DIR$/codeforces/431A.py" />
-        <option value="$PROJECT_DIR$/codeforces/1B.py" />
-        <option value="$PROJECT_DIR$/codeforces/527A.py" />
-        <option value="$PROJECT_DIR$/codeforces/368B.py" />
-        <option value="$PROJECT_DIR$/codeforces/466C.py" />
-        <option value="$PROJECT_DIR$/codeforces/641A.py" />
-        <option value="$PROJECT_DIR$/codeforces/651A.py" />
         <option value="$PROJECT_DIR$/codeforces/118B.py" />
         <option value="$PROJECT_DIR$/codeforces/471A.py" />
         <option value="$PROJECT_DIR$/codeforces/151A.py" />
@@ -320,13 +267,29 @@
         <option value="$PROJECT_DIR$/codeforces/276A.py" />
         <option value="$PROJECT_DIR$/codeforces/893D.py" />
         <option value="$PROJECT_DIR$/codeforces/893E.py" />
+        <option value="$PROJECT_DIR$/codeforces/913A.py" />
+        <option value="$PROJECT_DIR$/codeforces/913B.py" />
+        <option value="$PROJECT_DIR$/codeforces/913C.py" />
+        <option value="$PROJECT_DIR$/913D.py" />
+        <option value="$PROJECT_DIR$/codeforces/913D.py" />
+        <option value="$PROJECT_DIR$/codeforces/915A.py" />
+        <option value="$PROJECT_DIR$/codeforces/915B.py" />
+        <option value="$PROJECT_DIR$/codeforces/915C.py" />
+        <option value="$PROJECT_DIR$/codeforces/915D.py" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="200" />
+    <option name="y" value="23" />
+    <option name="width" value="1403" />
+    <option name="height" value="947" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -377,19 +340,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="codeforces" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
@@ -408,10 +366,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/shhuan/Documents/git/Algorithms/py/leetcode/medium/Triangle.py" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -439,8 +398,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.893E">
-    <configuration name="276A" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.915D">
+    <configuration name="913D" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -452,12 +411,14 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Algorithms" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/276A.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/913D.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="320A" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="915A" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -469,12 +430,14 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Algorithms" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/320A.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/915A.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="463B" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="915B" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -486,12 +449,14 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Algorithms" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/463B.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/915B.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="893D" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="915C" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -503,12 +468,14 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Algorithms" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/893D.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/915C.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="893E" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="915D" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -520,25 +487,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Algorithms" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/893E.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeforces/915D.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.463B" />
-      <item index="1" class="java.lang.String" itemvalue="Python.320A" />
-      <item index="2" class="java.lang.String" itemvalue="Python.276A" />
-      <item index="3" class="java.lang.String" itemvalue="Python.893D" />
-      <item index="4" class="java.lang.String" itemvalue="Python.893E" />
+      <item index="0" class="java.lang.String" itemvalue="Python.913D" />
+      <item index="1" class="java.lang.String" itemvalue="Python.915A" />
+      <item index="2" class="java.lang.String" itemvalue="Python.915B" />
+      <item index="3" class="java.lang.String" itemvalue="Python.915C" />
+      <item index="4" class="java.lang.String" itemvalue="Python.915D" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.893E" />
-        <item index="1" class="java.lang.String" itemvalue="Python.893D" />
-        <item index="2" class="java.lang.String" itemvalue="Python.276A" />
-        <item index="3" class="java.lang.String" itemvalue="Python.320A" />
-        <item index="4" class="java.lang.String" itemvalue="Python.463B" />
+        <item index="0" class="java.lang.String" itemvalue="Python.915D" />
+        <item index="1" class="java.lang.String" itemvalue="Python.915C" />
+        <item index="2" class="java.lang.String" itemvalue="Python.915B" />
+        <item index="3" class="java.lang.String" itemvalue="Python.915A" />
+        <item index="4" class="java.lang.String" itemvalue="Python.913D" />
       </list>
     </recent_temporary>
   </component>
@@ -679,19 +648,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="200" y="23" width="1403" height="947" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.202407" sideWeight="0.49448818" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39430448" sideWeight="0.50437635" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32457143" sideWeight="0.49562362" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3253012" sideWeight="0.49562362" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1404134" sideWeight="0.49448818" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4502857" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15085287" sideWeight="0.5055118" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31872946" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -699,6 +671,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -720,6 +693,9 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15085287" sideWeight="0.5055118" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1470,6 +1446,21 @@
           <line>22</line>
           <option name="timeStamp" value="910" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/codeforces/913D.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="912" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/codeforces/915C.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="915" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/codeforces/915D.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="917" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -1481,7 +1472,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="912" />
+      <option name="time" value="918" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -1494,87 +1485,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/codeforces/688B.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/431A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/1B.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="49" column="26" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-          <folding>
-            <element signature="e#25#36#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/527A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/368B.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/448A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/466C.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="49" column="22" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/651A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/118B.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/471A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="40" column="15" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeforces/151A.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codeforces/839A.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1790,7 +1700,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codeforces/255A.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="240">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
@@ -1798,7 +1708,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codeforces/798A.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
+        <state relative-caret-position="345">
           <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
           <folding />
         </state>
@@ -1806,7 +1716,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codeforces/463B.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="375">
           <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
           <folding />
         </state>
@@ -1814,7 +1724,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codeforces/320A.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
+        <state relative-caret-position="420">
           <caret line="35" column="12" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
           <folding />
         </state>
@@ -1822,7 +1732,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codeforces/384A.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
+        <state relative-caret-position="345">
           <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
           <folding />
         </state>
@@ -1830,7 +1740,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codeforces/276A.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="315">
           <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding />
         </state>
@@ -1846,7 +1756,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codeforces/893D.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
+        <state relative-caret-position="540">
           <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
           <folding />
         </state>
@@ -1854,7 +1764,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template/NCR.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
+        <state relative-caret-position="630">
           <caret line="49" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
@@ -1862,8 +1772,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codeforces/893E.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-167">
+        <state relative-caret-position="240">
           <caret line="71" column="13" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/894C.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="9" selection-end-column="10" />
+          <folding>
+            <element signature="e#25#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/913A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/913B.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/913C.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/913D.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/913D.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="58" column="16" lean-forward="false" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/915A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <element signature="e#74#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/915B.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/915C.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/915D.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforces/1A.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

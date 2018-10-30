@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/shhuan/Documents/git/algorithms/cpp/codeforces/lc611/main.cpp
+iostream
+-
+vector
+-
+set
+-
+algorithm
+-
+map
+-
+

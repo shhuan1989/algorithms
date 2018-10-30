@@ -8,6 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+.vs/
 env/
 build/
 develop-eggs/
@@ -99,3 +100,4 @@ ENV/
 
 # mypy
 .mypy_cache/
+cpp/algorithms/.vs/

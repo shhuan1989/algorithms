@@ -1,0 +1,3 @@
+C:/Users/shhuan/Documents/git/algorithms/cpp/codeforces/230B/cmake-build-debug/CMakeFiles/230B.dir
+C:/Users/shhuan/Documents/git/algorithms/cpp/codeforces/230B/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/shhuan/Documents/git/algorithms/cpp/codeforces/230B/cmake-build-debug/CMakeFiles/rebuild_cache.dir

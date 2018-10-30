@@ -20,68 +20,59 @@ class ListNode(object):
         self.next = None
 
 
-class Solution(object):
-    def countPalindromicSubsequences(self, S):
+class Solution:
+    def cherryPickup(self, grid):
         """
-        :type S: str
+        :type grid: List[List[int]]
         :rtype: int
         """
 
-        N = len(S)
-        s = [0] + [ord(v)-ord('a') for v in S]
-        MAXN = 1010
-        CSZ = 26
+        if not grid:
+            return 0
 
-        nxt = [[0 for _ in range(CSZ)] for _ in range(MAXN)]
-        lst = [[0 for _ in range(CSZ)] for _ in range(MAXN)]
-        for i in range(CSZ):
-            nxt[N+1][i] = N+1
+        A = grid
+        N = len(A)
 
-        for i in range(N, 0, -1):
-            for j in range(CSZ):
-                nxt[i][j] = nxt[i+1][j]
-            nxt[i][s[i]] = i
+        dp = [[[0 for _ in range(N)] for _ in range(N)] for _ in range(2*N)]
+        dp[0][0][0] = A[0][0]
 
-        for i in range(CSZ):
-            lst[0][i] = 0
+        for k in range(1, 2*N-2):
+            for i in range(N):
+                for j in range(i, N):
+                    ci = k-i
+                    cj = k-j
+                    if not (0 <= ci < N and 0 <= cj < N):
+                        continue
+                    if A[i][ci] < 0 or A[j][cj] < 0:
+                        continue
 
-        for i in range(1, N+1):
-            for j in range(CSZ):
-                lst[i][j] = lst[i-1][j]
-            lst[i][s[i]] = i
+                    d = A[i][ci] if i == j else A[i][ci]+A[i][cj]
+                    if i-1 >= 0 and j-1 >= 0:
+                        if dp[k-1][i-1][j-1] >= 0:
+                            dp[k][i][j] = max(dp[k][i][j], dp[k-1][i-1][j-1] + d)
 
-        dp = [[-1 for _ in range(MAXN)] for _ in range(MAXN)]
-        MOD = 1000000007
+                    if i-1 >= 0 and cj - 1 >= 0:
+                        if dp[k-1][i-1][j] >= 0:
+                            dp[k][i][j] = max(dp[k][i][j], dp[k-1][i-1][j] + d)
 
-        def dfs(l, r):
-            ret = dp[l][r]
-            if ret >= 0:
-                return ret
+                    if ci - 1 >= 0 and j - 1 >= 0:
+                        if dp[k-1][i][j-1] >= 0:
+                            dp[k][i][j] = max(dp[k][i][j], dp[k-1][i][j-1] + d)
 
-            if l > r:
-                return 1
-
-            ret = 1
-            for i in range(CSZ):
-                a = nxt[l][i]
-                b = lst[r][i]
-                if a < b:
-                    ret += dfs(a+1, b-1)
-                if a <= r:
-                    ret += 1
-
-            ret %= MOD
-            dp[l][r] = ret
-            return ret
-
-        ans = dfs(1, N)
-        return MOD-1 if ans == 0 else ans-1
+                    if ci-1 >= 0 and cj-1 >= 0:
+                        if dp[k-1][i][j] >= 0:
+                            dp[k][i][j] = max(dp[k][i][j], dp[k-1][i][j] + d)
 
 
+        ans = dp[2*N-2][N-1][N-1]
+        if ans < 0:
+            ans = 0
 
+        return ans
 
 s = Solution()
-print(s.countPalindromicSubsequences("bcccb"))
-print(s.countPalindromicSubsequences("dda"))
-print(s.countPalindromicSubsequences("bccb"))
-print(s.countPalindromicSubsequences("abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba"))
+print(s.cherryPickup([
+    [0, 1, -1],
+    [1, 0, -1],
+    [1, 1,  1]]))
+

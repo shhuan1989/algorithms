@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2017.2.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\894D.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\894D.dir/objects.a @CMakeFiles\894D.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\894D.dir/objects.a -Wl,--no-whole-archive  -o 894D.exe -Wl,--out-implib,lib894D.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\894D.dir\linklibs.rsp

@@ -1,4 +1,10 @@
-# -*- coding: utf-8 -*-
+# -*- coding:utf-8 -*-
+
+"""
+
+created by shuangquan.huang at 10/30/18
+
+"""
 
 import math
 import collections
@@ -9,54 +15,49 @@ import random
 import itertools
 import sys
 
-"""
-created by shhuan at 2018/10/30 19:45
-
-TLE, same code passed in C++
-
-"""
-
 
 N, M = map(int, input().split())
 
 A = []
-
 for i in range(N):
     A.append([int(x) for x in input()])
-
-# for row in A:
-#     print(row)
+    
 
 
-#f(r, c, color, width) = f(r+1, c+1, color, width-1) + mismatches_in_edge
+ans = [[float('inf')] * (N*M+1) for _ in range(2)]
 
-mxMN, mnMN = max(M, N), min(M, N)
-ans = [float('inf') for _ in range(mxMN + 1)]
-f = [[[[0 for _ in range(mxMN + 1)] for color in range(2)] for c in range(M+1)] for r in range(N+1)]
+rows = [[0 if i % 2 == 0 else 1 for i in range(M)], [1 if i % 2 == 0 else 0 for i in range(M)]]
 
-for width in range(1, min(N, N)+1):
-    for color in [0, 1]:
-        for sr in range(N-width+1):
-            for sc in range(N-width+1):
-                steps = f[sr+1][sc+1][color][width-1]
+b1 = [rows[i%2] for i in range(N)]
+b2 = [rows[(i+1)%2] for i in range(N)]
 
-                cc = color
-                for c in range(sc, sc+width):
-                    steps += 0 if A[sr][c] == cc else 1
-                    cc ^= 1
-                cc = color ^ 1
-                for r in range(sr+1, sr+width):
-                    steps += 0 if A[r][sc] == cc else 1
-                    cc ^= 1
+boards = [b1, b2]
+ans[0][1] = 0
+ans[0][0] = 0
+ans[1][1] = 0
+ans[1][0] = 0
+for ai, board in enumerate(boards):
+    for c in range(M*N+1):
+        for sr in range(N):
+            for sc in range(M):
+                reverted = 0
+                for w in range(2, min(N-sr, M-sc)+1):
+                    # print(w)
+                    for r in range(sr, sr+w):
+                        reverted += 1 if A[r][sc+w-1] != board[r][sc+w-1] else 0
+                    for c in range(sc, sc+w):
+                        reverted += 1 if A[sr+w-1][c] != board[sr+w-1][c] else 0
+                    
+                    ans[ai][w] = min(ans[ai][w], reverted)
+                
 
-                f[sr][sc][color][width] = steps
-                ans[width] = min(ans[width], steps)
-
-qc = input()
+Q = int(input())
 qs = [int(x) for x in input().split()]
-
-# print()
-# print(ans)
+print(ans[0][:min(M, N)], ans[1][:min(M, N)])
 for q in qs:
-    print(bisect.bisect_right(ans, q) - 1)
-
+    if q >= M*N:
+        print(min(M, N))
+    else:
+        i = bisect.bisect_right(ans[0], q)
+        j = bisect.bisect_right(ans[1], q)
+        print(min(i, j))

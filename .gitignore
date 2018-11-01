@@ -7,7 +7,10 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+.idea/
+.gradle/
 .Python
+env/
 build/
 develop-eggs/
 dist/
@@ -55,7 +58,6 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
 
 # Flask stuff:
 instance/
@@ -86,8 +88,10 @@ celerybeat-schedule
 # SageMath parsed files
 *.sage.py
 
-# Environments
+# dotenv
 .env
+
+# virtualenv
 .venv
 env/
 venv/

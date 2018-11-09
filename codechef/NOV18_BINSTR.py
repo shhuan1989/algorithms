@@ -30,14 +30,14 @@ created by shuangquan.huang at 11/7/18
 
 """
 
-# N, M = map(int, input().split())
-# A = []
-# for i in range(N):
-#     A.append(input())
-# Q = []
-# for i in range(M):
-#     l, r, v = input().split()
-#     Q.append((int(l), int(r), v))
+N, M = map(int, input().split())
+A = []
+for i in range(N):
+    A.append(input())
+Q = []
+for i in range(M):
+    l, r, v = input().split()
+    Q.append((int(l), int(r), v))
 
 import random
 # import time
@@ -63,25 +63,25 @@ def genInput(N, M, large=False):
             Q.append((l, r, v))
         return N, M, A, Q
         
-def readInput():
-    f = open('input.txt', 'r')
-    N, M = map(int, f.readline().split())
-    A, Q = [], []
-    for i in range(N):
-        A.append(f.readline().strip())
-    
-    for i in range(M):
-        l, r, v = f.readline().strip().split()
-        Q.append((int(l), int(r), v))
-    
-    f.close()
-
-    # print('{} {}'.format(N, M))
-    # print('\n'.join(A))
-    # for l, r, v in Q:
-    #     print('{} {} {}'.format(l, r, v))
-    # print('#' * 40)
-    return N, Q, A, Q
+# def readInput():
+#     f = open('input.txt', 'r')
+#     N, M = map(int, f.readline().split())
+#     A, Q = [], []
+#     for i in range(N):
+#         A.append(f.readline().strip())
+#
+#     for i in range(M):
+#         l, r, v = f.readline().strip().split()
+#         Q.append((int(l), int(r), v))
+#
+#     f.close()
+#
+#     # print('{} {}'.format(N, M))
+#     # print('\n'.join(A))
+#     # for l, r, v in Q:
+#     #     print('{} {} {}'.format(l, r, v))
+#     # print('#' * 40)
+#     return N, Q, A, Q
 # N, M, A, Q = genInput(10, 10, False)
 # print(N, M)
 # print('\n'.join(A))
@@ -89,7 +89,7 @@ def readInput():
 #     print(' '.join(map(str, q)))
 # print('===============')
 
-N, M, A, Q = readInput()
+# N, M, A, Q = readInput()
 
 
 # N, M = 5, 4
@@ -99,7 +99,7 @@ N, M, A, Q = readInput()
 # print('starting')
 # t0 = time.time()
 
-tree = {'c': [], 'v': []}
+tree = {'c': [], 'v': [], 'vl': 0}
 
 
 def compressStr(num, maxLen):
@@ -199,58 +199,46 @@ def rev(val):
 def buildTree(num, idx, numLen):
     t = tree
     num = compressStr(num, numLen)
-    
     while num:
         tv = t['v']
-        if tv:
-            same, vleft, numleft = diffCompressedStr(tv, num)
-            if not vleft:
-                if numleft:
-                    u = numleft[0][1]
-                    if u in t:
-                        t['c'].append(idx)
-                        t = t[u]
-                        num = popLeft(numleft, 1)
-                    else:
-                        t[u] = {'c': [idx], 'v': popLeft(numleft, 1)}
-                        return
+        same, vleft, num = diffCompressedStr(tv, num)
+        if not vleft:
+            if num:
+                u = num[0][1]
+                ru = rev(u)
+                if u in t:
+                    t['c'].append(idx)
+                    t = t[u]
+                    num = popLeft(num, 1)
+                elif ru in t:
+                    t[u] = {'c': [idx], 'v': popLeft(num, 1)}
                 else:
                     t['c'].append(idx)
+                    t['v'] = num
                     return
             else:
-                # split
-                c0 = t['0'] if '0' in t else None
-                c1 = t['1'] if '1' in t else None
-                
-                v0 = vleft[0][1]
-                n0 = numleft[0][1]
-                
-                t[n0]= {'c': [idx], 'v': popLeft(numleft, 1)}
-                t[v0] = {'c': [x for x in t['c']], 'v':popLeft(vleft, 1)}
-                
-                if c0:
-                    t[v0]['0'] = c0
-                if c1:
-                    t[v0]['1'] = c1
-                    
-                t['v'] = same
                 t['c'].append(idx)
                 return
-                
         else:
+            # split
+            c0 = t['0'] if '0' in t else None
+            c1 = t['1'] if '1' in t else None
+
+            v0 = vleft[0][1]
+            n0 = num[0][1]
+
+            t[n0] = {'c': [idx], 'v': popLeft(num, 1)}
+            t[v0] = {'c': [x for x in t['c']], 'v': popLeft(vleft, 1)}
+
+            if c0:
+                t[v0]['0'] = c0
+            if c1:
+                t[v0]['1'] = c1
+
+            t['v'] = same
             t['c'].append(idx)
-            u = num[0][1]
-            ru = rev(u)
-            if u in t:
-                t = t[u]
-                num = popLeft(num, 1)
-            elif ru in t:
-                t[u] = {'c': [idx], 'v': popLeft(num, 1)}
-                return
-            else:
-                t['v'] = num
-                return
-            
+            return
+    t['c'].append(idx)
 
 def computeTreeValLen(t):
     if not t:
@@ -319,6 +307,7 @@ def check(l, r, idx):
 # print(check(4, 10, [9, 11]))
 # print(check(4, 10, [5, 7]))
 # print('=======check===========')
+
 
 def find(l, r, idx):
     a, b = 0, len(idx)

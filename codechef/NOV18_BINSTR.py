@@ -4,6 +4,19 @@
 
 created by shuangquan.huang at 11/7/18
 
+
+5 4
+0100
+0101
+0001
+1011
+0011
+2 3 10
+1 5 1100
+3 5 1010
+1 5 11100
+
+
 5 4
 0100
 0101
@@ -26,91 +39,245 @@ created by shuangquan.huang at 11/7/18
 #     l, r, v = input().split()
 #     Q.append((int(l), int(r), v))
 
-# import random
+import random
 # import time
-# N, M = 10**5, 10**5
-# A = ['1' + ''.join(['1' if random.randint(0, 10) > 4 else '0' for _ in range(random.randint(1000 if i < 10 else 1, 2000 if i < 10 else 20))]) for i in range(N)]
-# Q = []
-# for i in range(M):
-#     l = random.randint(1, N // 2)
-#     r = random.randint(l, N)
-#     v = '1' + ''.join(['1' if random.randint(0, 10) > 4 else '0' for _ in range(random.randint(1000 if i < 10 else 1, 20000 if i < 10 else 20))])
-#     Q.append((l, r, v))
+def genInput(N, M, large=False):
+    if large:
+        A = ['1' + ''.join(['1' if random.randint(0, 10) > 4 else '0' for _ in
+                            range(random.randint(1000 if i < 10 else 1, 2000 if i < 10 else 20))]) for i in range(N)]
+        Q = []
+        for i in range(M):
+            l = random.randint(1, N // 2)
+            r = random.randint(l, N)
+            v = '1' + ''.join(['1' if random.randint(0, 10) > 4 else '0' for _ in
+                               range(random.randint(1000 if i < 10 else 1, 20000 if i < 10 else 20))])
+            Q.append((l, r, v))
+        return N, M, A, Q
+    else:
+        A = ['1' + ''.join(['1' if random.randint(0, 10) > 4 else '0' for _ in range(1, random.randint(1, 20))]) for _ in range(N)]
+        Q = []
+        for i in range(M):
+            l = random.randint(1, N // 2)
+            r = random.randint(l, N)
+            v = '1' + ''.join(['1' if random.randint(0, 10) > 4 else '0' for _ in range(random.randint(1, 20))])
+            Q.append((l, r, v))
+        return N, M, A, Q
+        
+def readInput():
+    f = open('input.txt', 'r')
+    N, M = map(int, f.readline().split())
+    A, Q = [], []
+    for i in range(N):
+        A.append(f.readline().strip())
+    
+    for i in range(M):
+        l, r, v = f.readline().strip().split()
+        Q.append((int(l), int(r), v))
+    
+    f.close()
+
+    # print('{} {}'.format(N, M))
+    # print('\n'.join(A))
+    # for l, r, v in Q:
+    #     print('{} {} {}'.format(l, r, v))
+    # print('#' * 40)
+    return N, Q, A, Q
+# N, M, A, Q = genInput(10, 10, False)
+# print(N, M)
+# print('\n'.join(A))
+# for q in Q:
+#     print(' '.join(map(str, q)))
+# print('===============')
+
+N, M, A, Q = readInput()
 
 
-N, M = 5, 4
-A = ['0100', '0101', '0001', '0011', '101100110001011']
-Q = [(2, 3, '10'), (1, 5, '1100'), (3, 5, '1010'), (1, 5, '11100')]
+# N, M = 5, 4
+# A = ['0100', '0101', '0001', '0011', '101100110001011']
+# Q = [(2, 3, '10'), (1, 5, '1100'), (3, 5, '1010'), (1, 5, '11100')]
+#
+# print('starting')
+# t0 = time.time()
 
-print('starting')
-import time
-t0 = time.time()
+tree = {'c': [], 'v': []}
 
-tree = {'c': [], 'v': ''}
+
+def compressStr(num, maxLen):
+    ans = []
+    ln = len(num)
+    if ln < maxLen:
+        ans.append((maxLen-ln, '0'))
+    elif ln > maxLen:
+        num = num[ln-maxLen:]
+    
+    i, j = 0, 0
+    while j < len(num):
+        if num[j] != num[i]:
+            ans.append((j-i, num[i]))
+            i = j
+        j += 1
+    ans.append((j-i, num[i]))
+    if len(ans) > 1 and ans[0][1] == ans[1][1]:
+        ans[:2] = [(ans[0][0] + ans[1][0], ans[0][1])]
+    
+    return ans
+
+
+# print('===========compress==============')
+# print(compressStr('101010100101', 100))
+# print(compressStr('1111111', 100))
+# print(compressStr('0000011111', 100))
+# print(compressStr('00011001100011', 100))
+# print(compressStr('00011001100011', 5))
+# print(compressStr('11', 10))
+# print('===========compress==============')
+
+
+def diffCompressedStr(u, v):
+    ui, vi = 0, 0
+    same = []
+    while ui < len(u) and vi < len(v):
+        if u[ui][1] == v[vi][1]:
+            if u[ui][0] == v[vi][0]:
+                same.append((u[ui][0], u[ui][1]))
+                ui += 1
+                vi += 1
+            elif u[ui][0] < v[vi][0]:
+                same.append((u[ui][0], u[ui][1]))
+                v[vi] = (v[vi][0]-u[ui][0], v[vi][1])
+                ui += 1
+            else:
+                same.append((v[vi][0], v[vi][1]))
+                u[ui] = (u[ui][0]-v[vi][0], u[ui][1])
+                vi += 1
+        else:
+            break
+    
+    return same, u[ui:], v[vi:]
+
+
+# print("============diff=============")
+# print(diffCompressedStr([], [(8, '1'), (12, '0')]))
+# print(diffCompressedStr([(2, '1')], [(8, '1'), (12, '0')]))
+# print(diffCompressedStr([(2, '0')], [(8, '1'), (12, '0')]))
+# print(diffCompressedStr([(10, '1'), (12, '0')], []))
+# print(diffCompressedStr([(10, '1'), (12, '0')], [(2, '1')]))
+# print(diffCompressedStr([(10, '1'), (12, '0')], [(2, '0')]))
+# print(diffCompressedStr([(10, '1'), (12, '0')], [(8, '1'), (12, '0')]))
+# print(diffCompressedStr([(10, '1'), (12, '0')], [(12, '1'), (12, '0')]))
+# print(diffCompressedStr([(10, '1'), (12, '0'), (22, '1')], [(10, '1'), (12, '0'), (12, '1')]))
+#
+# print("============diff=============")
+
+
+def popLeft(num, count=1):
+    c = 0
+    for i in range(len(num)):
+        if c + num[i][0] > count:
+            return [(num[i][0]-count+c, num[i][1])] + num[i+1:]
+        else:
+            c += num[i][0]
+    
+    return []
+
+
+# print('=' * 80)
+#
+# print(popLeft([(3, '0'), (4, '1')], 1))
+# print(popLeft([(3, '0'), (4, '1')], 3))
+# print(popLeft([(3, '0'), (4, '1')], 5))
+# print(popLeft([(3, '0'), (4, '1')], 10))
+# print(popLeft([(3, '0'), (4, '1')], 0))
+# print(popLeft([(3, '0'), (4, '1')], 20))
+#
+# print('=' * 80)
+
+def rev(val):
+    return '1' if val == '0' else '0'
 
 
 def buildTree(num, idx, numLen):
     t = tree
-    ln = len(num)
-    if ln < numLen:
-        num = '0' * (numLen-ln) + num
+    num = compressStr(num, numLen)
     
-    di = 0
-    while di < numLen:
-        u = num[di]
-        ru = '1' if u == '0' else '0'
+    while num:
         tv = t['v']
         if tv:
-            vi = 0
-            while vi < len(tv) and tv[vi] == num[di+vi]:
-                vi += 1
-            if vi >= len(tv):
-                di = di+len(tv)
-                if di < len(num):
-                    t['c'].append(idx)
-                    u = num[di]
+            same, vleft, numleft = diffCompressedStr(tv, num)
+            if not vleft:
+                if numleft:
+                    u = numleft[0][1]
                     if u in t:
+                        t['c'].append(idx)
                         t = t[u]
-                        di += 1
+                        num = popLeft(numleft, 1)
                     else:
-                        t[u] = {'c': [idx], 'v': num[di+1:]}
+                        t[u] = {'c': [idx], 'v': popLeft(numleft, 1)}
                         return
+                else:
+                    t['c'].append(idx)
+                    return
             else:
                 # split
-                t['v'] = tv[:vi]
-                
                 c0 = t['0'] if '0' in t else None
                 c1 = t['1'] if '1' in t else None
-                tvi = tv[vi]
-                t[tvi] = {'c': [x for x in t['c']], 'v': tv[vi+1:]}
+                
+                v0 = vleft[0][1]
+                n0 = numleft[0][1]
+                
+                t[n0]= {'c': [idx], 'v': popLeft(numleft, 1)}
+                t[v0] = {'c': [x for x in t['c']], 'v':popLeft(vleft, 1)}
+                
                 if c0:
-                    t[tvi]['0'] = c0
+                    t[v0]['0'] = c0
                 if c1:
-                    t[tvi]['1'] = c1
-                t[num[di+vi]] = {'c': [idx], 'v': num[di+vi+1:]}
+                    t[v0]['1'] = c1
+                    
+                t['v'] = same
                 t['c'].append(idx)
                 return
+                
         else:
             t['c'].append(idx)
+            u = num[0][1]
+            ru = rev(u)
             if u in t:
                 t = t[u]
-                di += 1
+                num = popLeft(num, 1)
             elif ru in t:
-                t[u] = {'c': [idx], 'v': num[di+1:]}
+                t[u] = {'c': [idx], 'v': popLeft(num, 1)}
                 return
             else:
-                t['v'] = num[di:]
+                t['v'] = num
                 return
             
+
+def computeTreeValLen(t):
+    if not t:
+        return
+    
+    if 'v' in t:
+        t['vl'] = sum([x[0] for x in t['v']] or [0])
+    else:
+        t['vl'] = 0
+        
+    if '0' in t:
+        computeTreeValLen(t['0'])
+    if '1' in t:
+        computeTreeValLen(t['1'])
+    
 
 MXD = max([len(x) for x in A])
 for i, v in enumerate(A):
     buildTree(v, i + 1, MXD)
 
-print('tree built', time.time() - t0)
+computeTreeValLen(tree)
+
+
+# print('tree built', time.time() - t0)
 
 import json
-print(json.dumps(tree))
+# print(json.dumps(tree))
 # print(json.dumps(tree))
 #
 
@@ -139,6 +306,19 @@ def check(l, r, idx):
     
     return False
 
+# print('=======check===========')
+# print(check(1, 3, [1, 3, 4, 6]))
+# print(check(1, 3, [3, 4, 6]))
+# print(check(1, 3, [2, 4, 6]))
+# print(check(1, 3, [1, 2]))
+# print(check(1, 3, [1, 2, 4]))
+# print(check(1, 10, [11, 12]))
+# print(check(1, 10, [9, 12]))
+# print(check(4, 10, [1, 3]))
+# print(check(4, 10, [1, 5]))
+# print(check(4, 10, [9, 11]))
+# print(check(4, 10, [5, 7]))
+# print('=======check===========')
 
 def find(l, r, idx):
     a, b = 0, len(idx)
@@ -156,72 +336,43 @@ def find(l, r, idx):
     return idx[a]
 
 
+# print('=======find===========')
+# print(find(1, 3, [1, 3, 4, 6]))
+# print(find(1, 3, [3, 4, 6]))
+# print(find(1, 3, [2, 4, 6]))
+# print(find(1, 3, [1, 2]))
+# print(find(1, 3, [1, 2, 4]))
+# print(find(1, 10, [9, 12]))
+# print(find(4, 10, [1, 5]))
+# print(find(4, 10, [9, 11]))
+# print(find(4, 10, [5, 7]))
+# print('=======find===========')
+
 def query(l, r, num):
-    ln = len(num)
-    if ln > MXD:
-        num = num[ln-MXD:]
-    else:
-        num = '0' * (MXD-ln) + num
+    num = compressStr(num, MXD)
     
-    di = 0
     t = tree
-    while di < MXD:
-        if len(t['c']) <= 1:
+    while num:
+        if len(tree['c']) <= 1:
             break
-            
-        tv = t['v']
-        u = num[di]
-        ru = '0' if u == '1' else '1'
-        if tv:
-            di += len(tv)
-        else:
-            if ru in t and check(l, r, t[ru]['c']):
-                t = t[ru]
-                di += 1
-            elif u in t and check(l, r, t[u]['c']):
-                t = t[u]
-                di += 1
-            else:
+        if t['v']:
+            num = popLeft(num, t['vl'])
+            if not num:
                 break
-    
+                
+        a = num[0][1]
+        ra = rev(a)
+        if ra in t and check(l, r, t[ra]['c']):
+            t = t[ra]
+            num = popLeft(num, 1)
+        elif a in t and check(l, r, t[a]['c']):
+            t = t[a]
+            num = popLeft(num, 1)
+        else:
+            break
+                
     return find(l, r, t['c'])
     
-    
-
-def query2(l, r, num):
-    t = tree
-    x = MXD - len(num)
-    for di in range(MXD):
-        d = num[di - x] if di >= x else '0'
-        rev = '0' if d == '1' else '1'
-        
-        t0 = t[d] if d in t else None
-        t1 = t[rev] if rev in t else None
-        
-        if not t0 and not t1:
-            break
-        elif not t0:
-            if check(l, r, t1['c']):
-                t = t1
-            else:
-                break
-        elif not t1:
-            if check(l, r, t0['c']):
-                t = t0
-            else:
-                break
-        else:
-            if check(l, r, t1['c']):
-                # if some id in t1 between l and r
-                t = t1
-            elif check(l, r, t0['c']):
-                # if some id in t0 between l and r
-                t = t0
-            else:
-                break
-    
-    return find(l, r, t['c'])
-
 
 ans = []
 for l, r, v in Q:
@@ -229,4 +380,4 @@ for l, r, v in Q:
 
 print('\n'.join(map(str, ans)))
 
-print(time.time() - t0)
+# print(time.time() - t0)

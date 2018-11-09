@@ -20,6 +20,9 @@ memo = {}
 def ncr(n, m):
     if m > n:
         return 0
+    
+    m = min(m, n-m)
+    
     key = (n, m)
     if key in memo:
         return memo[key]
@@ -30,7 +33,6 @@ def ncr(n, m):
         preval = memo[prekey]
         ans = preval * (n-m+1) // m
     else:
-        m = min(m, n-m)
         numer = reduce(op.mul, range(n, n - m, -1), 1)
         denom = reduce(op.mul, range(1, m + 1), 1)
         ans = numer // denom
@@ -39,22 +41,52 @@ def ncr(n, m):
 
     return ans
 
+MOD = 10 ** 9 + 7
 
-def solve(A, N):
-    A.sort()
-    mod = 10**9 + 7
+# memo = {}
+# def ncr(n, m):
+#     if m > n:
+#         return 0
+#
+#     m = min(m, n-m)
+#
+#     if m == 1:
+#         return n
+#     if m == 0:
+#         return 1
+#
+#     key = (n, m)
+#     if key in memo:
+#         return memo[key]
+#
+#     ans = ncr(n-1, m) + ncr(n-1, m-1)
+#     ans %= MOD
+#     memo[key] = ans
+#
+#     return ans
+#
+
+
+
+def solve(A):
     ans = 0
+    A = list(sorted(collections.Counter(A).items()))
+    N = len(A)
+    
+    if max([v[1] for v in A]) == 1:
+        for i in range(1, N+1, 2):
+            ans += ncr(N, i)
+            ans %= MOD
+        
+        return ans
+        
+    left, right = [0] * (N+1), [0] * (N+1)
+    for i in range(N):
+        left[i+1] = left[i] + A[i][1]
+    for i in range(N-1, -1, -1):
+        right[i] = right[i+1] + A[i][1]
 
-    B = list(sorted(collections.Counter(A).items()))
-    LB = len(B)
-    left, right = [0] * (LB+1), [0] * (LB+1)
-
-    for i in range(LB):
-        left[i+1] = left[i] + B[i][1]
-    for i in range(LB-1, -1, -1):
-        right[i] = right[i+1] + B[i][1]
-
-    for i, v in enumerate(B):
+    for i, v in enumerate(A):
         l, m, r = left[i], v[1], right[i+1]
 
         # consist array with 3 parts,
@@ -70,34 +102,34 @@ def solve(A, N):
         #         for c in range(max(0, a-b+1), a+b):
         #             ans += na * nb * ncr(r, c)
         #             ans %= mod
-
-        nlas = [1] * (l+1)
-        nmbs = [1] * (m+1)
+        
         nrcs = [1] * (r+1)
-
         for c in range(1, r+1):
             nrcs[c] = nrcs[c-1] + ncr(r, c)
 
-        for a in range(1, l+1):
-            nlas[a] = nlas[a-1] + ncr(l, a)
-
-        for b in range(1, m+1):
-            nmbs[b] = nmbs[b-1] + ncr(m, b)
-
         for b in range(1, m + 1):
             nb = ncr(m, b)
-            for a in range(l+1):
-                if a + b - 1 > r:
-                    break
+            for a in range(min(l, r+b-1)+1):
+                mxc = min(a+b-1, r)
                 na = ncr(l, a)
-                ans += na * nb * (nrcs[a+b-1] - nrcs[max(0, a-b+1)] + ncr(r, max(0, a-b+1)))
-                ans %= mod
+                nc = nrcs[mxc] - (nrcs[a - b] if a-b >= 0 else 0)
+                ans += na * nb * nc
+                ans %= MOD
 
-    return ans % mod
+    return ans % MOD
 
+
+# import random
+# t0 = time.time()
+# A = [i+1 for i in range(1000)]
+# for i in range(30):
+#     random.shuffle(A)
+#     print(solve(A))
+#
+# print(time.time() - t0)
 
 T = int(input())
 for ti in range(T):
     N = int(input())
     A = [int(x) for x in input().split()]
-    print(solve(A, N))
+    print(solve(A))

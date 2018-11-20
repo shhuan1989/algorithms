@@ -43,4 +43,3 @@ for c, w in wc:
         break
 
 print(' '.join(map(str, ans[:K])))
-

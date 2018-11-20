@@ -39,70 +39,17 @@ for i in range(M):
     l, r, v = input().split()
     Q.append((int(l), int(r), v))
 
-import random
-# import time
-def genInput(N, M, large=False):
-    if large:
-        A = ['1' + ''.join(['1' if random.randint(0, 10) > 4 else '0' for _ in
-                            range(random.randint(1000 if i < 10 else 1, 2000 if i < 10 else 20))]) for i in range(N)]
-        Q = []
-        for i in range(M):
-            l = random.randint(1, N // 2)
-            r = random.randint(l, N)
-            v = '1' + ''.join(['1' if random.randint(0, 10) > 4 else '0' for _ in
-                               range(random.randint(1000 if i < 10 else 1, 20000 if i < 10 else 20))])
-            Q.append((l, r, v))
-        return N, M, A, Q
-    else:
-        A = ['1' + ''.join(['1' if random.randint(0, 10) > 4 else '0' for _ in range(1, random.randint(1, 20))]) for _ in range(N)]
-        Q = []
-        for i in range(M):
-            l = random.randint(1, N // 2)
-            r = random.randint(l, N)
-            v = '1' + ''.join(['1' if random.randint(0, 10) > 4 else '0' for _ in range(random.randint(1, 20))])
-            Q.append((l, r, v))
-        return N, M, A, Q
-        
-# def readInput():
-#     f = open('input.txt', 'r')
-#     N, M = map(int, f.readline().split())
-#     A, Q = [], []
-#     for i in range(N):
-#         A.append(f.readline().strip())
-#
-#     for i in range(M):
-#         l, r, v = f.readline().strip().split()
-#         Q.append((int(l), int(r), v))
-#
-#     f.close()
-#
-#     # print('{} {}'.format(N, M))
-#     # print('\n'.join(A))
-#     # for l, r, v in Q:
-#     #     print('{} {} {}'.format(l, r, v))
-#     # print('#' * 40)
-#     return N, Q, A, Q
-# N, M, A, Q = genInput(10, 10, False)
-# print(N, M)
-# print('\n'.join(A))
-# for q in Q:
-#     print(' '.join(map(str, q)))
-# print('===============')
-
-# N, M, A, Q = readInput()
-
-
-# N, M = 5, 4
-# A = ['0100', '0101', '0001', '0011', '101100110001011']
-# Q = [(2, 3, '10'), (1, 5, '1100'), (3, 5, '1010'), (1, 5, '11100')]
-#
-# print('starting')
-# t0 = time.time()
 
 tree = {'c': [], 'v': [], 'vl': 0}
 
 
 def compressStr(num, maxLen):
+    """
+    压缩字符串,例如'11100111' 压缩成[(3,'1'), (2,'0'), (3,'1')]
+    :param num:
+    :param maxLen:
+    :return:
+    """
     ans = []
     ln = len(num)
     if ln < maxLen:
@@ -123,17 +70,13 @@ def compressStr(num, maxLen):
     return ans
 
 
-# print('===========compress==============')
-# print(compressStr('101010100101', 100))
-# print(compressStr('1111111', 100))
-# print(compressStr('0000011111', 100))
-# print(compressStr('00011001100011', 100))
-# print(compressStr('00011001100011', 5))
-# print(compressStr('11', 10))
-# print('===========compress==============')
-
-
 def diffCompressedStr(u, v):
+    """
+    比较两个压缩后的字符串，返回相同的前缀，和各自剩余的不同的部分
+    :param u:
+    :param v:
+    :return:
+    """
     ui, vi = 0, 0
     same = []
     while ui < len(u) and vi < len(v):
@@ -156,21 +99,13 @@ def diffCompressedStr(u, v):
     return same, u[ui:], v[vi:]
 
 
-# print("============diff=============")
-# print(diffCompressedStr([], [(8, '1'), (12, '0')]))
-# print(diffCompressedStr([(2, '1')], [(8, '1'), (12, '0')]))
-# print(diffCompressedStr([(2, '0')], [(8, '1'), (12, '0')]))
-# print(diffCompressedStr([(10, '1'), (12, '0')], []))
-# print(diffCompressedStr([(10, '1'), (12, '0')], [(2, '1')]))
-# print(diffCompressedStr([(10, '1'), (12, '0')], [(2, '0')]))
-# print(diffCompressedStr([(10, '1'), (12, '0')], [(8, '1'), (12, '0')]))
-# print(diffCompressedStr([(10, '1'), (12, '0')], [(12, '1'), (12, '0')]))
-# print(diffCompressedStr([(10, '1'), (12, '0'), (22, '1')], [(10, '1'), (12, '0'), (12, '1')]))
-#
-# print("============diff=============")
-
-
 def popLeft(num, count=1):
+    """
+    从压缩过的字符串中移除前count个字符
+    :param num:
+    :param count:
+    :return:
+    """
     c = 0
     for i in range(len(num)):
         if c + num[i][0] > count:
@@ -181,22 +116,23 @@ def popLeft(num, count=1):
     return []
 
 
-# print('=' * 80)
-#
-# print(popLeft([(3, '0'), (4, '1')], 1))
-# print(popLeft([(3, '0'), (4, '1')], 3))
-# print(popLeft([(3, '0'), (4, '1')], 5))
-# print(popLeft([(3, '0'), (4, '1')], 10))
-# print(popLeft([(3, '0'), (4, '1')], 0))
-# print(popLeft([(3, '0'), (4, '1')], 20))
-#
-# print('=' * 80)
-
 def rev(val):
+    """
+    取反
+    :param val:
+    :return:
+    """
     return '1' if val == '0' else '0'
 
 
 def buildTree(num, idx, numLen):
+    """
+    创建前缀树
+    :param num:
+    :param idx:
+    :param numLen:
+    :return:
+    """
     t = tree
     num = compressStr(num, numLen)
     while num:
@@ -220,7 +156,7 @@ def buildTree(num, idx, numLen):
                 t['c'].append(idx)
                 return
         else:
-            # split
+            # 如果当前节点的值和插入的值有不完全相同，分裂当前节点
             c0 = t['0'] if '0' in t else None
             c1 = t['1'] if '1' in t else None
 
@@ -240,7 +176,13 @@ def buildTree(num, idx, numLen):
             return
     t['c'].append(idx)
 
+
 def computeTreeValLen(t):
+    """
+    计算每个节点中的字符串的长度
+    :param t:
+    :return:
+    """
     if not t:
         return
     
@@ -253,24 +195,16 @@ def computeTreeValLen(t):
         computeTreeValLen(t['0'])
     if '1' in t:
         computeTreeValLen(t['1'])
-    
-
-MXD = max([len(x) for x in A])
-for i, v in enumerate(A):
-    buildTree(v, i + 1, MXD)
-
-computeTreeValLen(tree)
-
-
-# print('tree built', time.time() - t0)
-
-import json
-# print(json.dumps(tree))
-# print(json.dumps(tree))
-#
 
 
 def check(l, r, idx):
+    """
+    检查递增的数组idx中是否有值介于[l, r]之间
+    :param l:
+    :param r:
+    :param idx:
+    :return:
+    """
     if not idx:
         return False
     
@@ -294,22 +228,15 @@ def check(l, r, idx):
     
     return False
 
-# print('=======check===========')
-# print(check(1, 3, [1, 3, 4, 6]))
-# print(check(1, 3, [3, 4, 6]))
-# print(check(1, 3, [2, 4, 6]))
-# print(check(1, 3, [1, 2]))
-# print(check(1, 3, [1, 2, 4]))
-# print(check(1, 10, [11, 12]))
-# print(check(1, 10, [9, 12]))
-# print(check(4, 10, [1, 3]))
-# print(check(4, 10, [1, 5]))
-# print(check(4, 10, [9, 11]))
-# print(check(4, 10, [5, 7]))
-# print('=======check===========')
-
 
 def find(l, r, idx):
+    """
+    在递增数组idx中查找最小的介于[l,r]之间的值，假设必定存在
+    :param l:
+    :param r:
+    :param idx:
+    :return:
+    """
     a, b = 0, len(idx)
     
     while a < b:
@@ -325,19 +252,14 @@ def find(l, r, idx):
     return idx[a]
 
 
-# print('=======find===========')
-# print(find(1, 3, [1, 3, 4, 6]))
-# print(find(1, 3, [3, 4, 6]))
-# print(find(1, 3, [2, 4, 6]))
-# print(find(1, 3, [1, 2]))
-# print(find(1, 3, [1, 2, 4]))
-# print(find(1, 10, [9, 12]))
-# print(find(4, 10, [1, 5]))
-# print(find(4, 10, [9, 11]))
-# print(find(4, 10, [5, 7]))
-# print('=======find===========')
-
 def query(l, r, num):
+    """
+    在前缀树中查询
+    :param l:
+    :param r:
+    :param num:
+    :return:
+    """
     num = compressStr(num, MXD)
     
     t = tree
@@ -363,10 +285,13 @@ def query(l, r, num):
     return find(l, r, t['c'])
     
 
+MXD = max([len(x) for x in A])
+for i, v in enumerate(A):
+    buildTree(v, i + 1, MXD)
+computeTreeValLen(tree)
+
 ans = []
 for l, r, v in Q:
     ans.append(query(l, r, v))
 
 print('\n'.join(map(str, ans)))
-
-# print(time.time() - t0)

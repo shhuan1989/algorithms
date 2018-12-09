@@ -1,38 +1,56 @@
-# -*- coding: utf-8 -*-
+# -*- coding:utf-8 -*-
 
+"""
+
+created by shuangquan.huang at 11/26/18
+
+"""
 import math
-import collections
-import bisect
-import heapq
-import time
-import itertools
-import sys
 
-"""
-created by shhuan at 2018/11/24 15:29
+f = [0] * 100
+for i in range(100):
+    f[i] = (4 ** i - 1) // 3
 
-"""
+
+def solve(N, K):
+    if N < 100 and f[N] < K:
+        print('NO')
+        return
+
+    for i in range(99):
+        if f[i] <= K < f[i + 1]:
+            x = K - f[i]
+            a = N - i
+
+            if x == 0:
+                print('YES {}'.format(a))
+                return
+
+            edge = 2 ** (i + 1) - 1
+            others = (2 ** i - 1) ** 2
+            if edge == x:
+                print('YES {}'.format(a - 1))
+                return
+
+            ans = a
+            if edge < x:
+                x -= edge
+                ans = a - 1
+
+            # split others
+            for j in range(a + 1):
+                if others * f[j] >= x:
+                    print('YES {}'.format(ans))
+                    return
+            print('NO')
+
+            return
+
+    print('NO')
+
 
 T = int(input())
 
-ans = []
 for ti in range(T):
     N, K = map(int, input().split())
-    a = math.log(3*K+1, 4)
-    if N < a:
-        ans.append("NO")
-    else:
-        a = N - int(a)
-        if a > 1:
-            L = 3 * K - (4**(N-a) - 1)
-            b = N - a
-            d = 3 * L / (4 ** a - 1) if a <= math.log(3*L+1) else 0
-            if b >= math.log(math.sqrt(0.25 + d) + 0.5, 2):
-                ans.append('YES {}'.format(a))
-            else:
-                ans.append('YES {}'.format(a - 1))
-        else:
-            ans.append('YES {}'.format(a))
-
-
-print('\n'.join(ans))
+    solve(N, K)

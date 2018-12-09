@@ -8,44 +8,50 @@ created by shuangquan.huang at 11/21/18
 
 import math
 
-def ncr(n, m):
-    pass
 
 
-def solve(l, r, x):
-    if x <= 0:
-        return 0
+nums = [i for i in range(10)]
+for l in range(1, 19):
+    for d in range(1, 10):
+        nums.append(d * (10 ** l))
     
-    if len(l) < len(r):
-        l = '0' * (len(r) - len(l)) + l
+    x = [0 for _ in range(l)]
+    for s in range(1, 10):
+        x[0] = s
+        for i in range(1, l):
+            for t in range(1, 10):
+                x[i] = t
+                nums.append(int(''.join(map(str, x))))
+            x[i] = 0
         
-    ans = 0
-    a, b = int(l[0]), int(r[0])
-    if x == 3:
-        pass
-    elif x == 2:
-        ans += max(b-a-1, 0) * (len(l)-1) * 9
-        if a == b:
-            ans += solve(l[1:], r[1:], 1)
-        else:
-            pass
-    elif x == 1:
-        ans += max(b-a-1, 0)
-        if a != b:
-            if all([c == '0' for c in l[1:]]):
-                ans += 1
-            if all([c == '0' for c in r[1:]]):
-                ans += 1
-        else:
-            if all([c == '0' for c in l[1:]]) and all([c == '0' for c in r[1:]]):
-                ans += 1
-    
-    return ans
-    
+        if l > 2:
+            for i in range(1, l):
+                for t in range(1, 10):
+                    x[i] = t
+                    for j in range(i+1,l):
+                        for u in range(1, 10):
+                            x[j] = u
+                            nums.append(int(''.join(map(str, x))))
+                        x[j] = 0
+                    x[i] = 0
 
+nums.sort()
 
+# print(nums[:1001])
+
+for v in range(1001):
+    if v not in nums[:1001]:
+        print(v)
+
+import bisect
 
 T = int(input())
+ans = []
 for ti in range(T):
-    l, r = input().split()
-    print(solve(l, r))
+    l, r = map(int, input().split())
+    
+    a = bisect.bisect_left(nums, l)
+    b = bisect.bisect_right(nums, r)
+    ans.append(b-a)
+    
+print('\n'.join(map(str, ans)))

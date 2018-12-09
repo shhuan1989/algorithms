@@ -4,75 +4,45 @@ created by shhuan at 2018/10/20 22:37
 
 """
 
-import bisect
+
 import collections
 import heapq
-import random
-import time
 
-import itertools
+import bisect
+
 
 class Solution(object):
-    def shortestSuperstring(self, A):
+    def tallestBillboard(self, rods):
         """
-        :type A: List[str]
-        :rtype: str
+        :type rods: List[int]
+        :rtype: int
         """
 
-        N = len(A)
-        dp = [['' for _ in range(N)] for _ in range(1 << N)]
+        mxs = sum(rods) // 2
+        states = {(0, 0)}
+        for i, v in enumerate(rods):
+            nstates = set()
+            for a, b in states:
+                if a + v <= mxs:
+                    nstates.add((a+v, b))
+                if b + v <= mxs:
+                    nstates.add((a, b+v))
+            states |= nstates
 
-        def merge(a, b):
-            i = min(len(a), len(b))
-            while i >= 0:
-                if a[len(a) - i:] == b[:i]:
-                    return a + b[i:]
-                i -= 1
+        ans = 0
+        for a, b in states:
+            if a == b:
+                ans = max(ans, a)
 
-            return a + b
-
-
-        shared = [[0 for _ in range(N)] for _ in range(N)]
-
-        for i in range(N):
-            for j in range(N):
-                if i != j:
-                    s = merge(A[i], A[j])
-                    shared[i][j] = len(A[i]) + len(A[j]) - len(s)
-
-        for state in range(1 << N):
-            for i in range(N):
-                if state == 1 << i:
-                    dp[state][i] = A[i]
-                elif state & (1 << i) == 0:
-                    continue
-                else:
-                    prevs = state ^ (1 << i)
-                    for prei in range(N):
-                        if prevs & (1 << prei) > 0:
-                            # s = merge(dp[prevs][prei], A[i])
-                            # no string is substring of other string
-                            s = dp[prevs][prei] + A[i][shared[prei][i]:]
-                            if dp[state][i] == '' or len(s) < len(dp[state][i]):
-                                dp[state][i] = s
-
-        ans = '*' * 1000
-        for s in dp[(1 << N) - 1]:
-            if len(s) < len(ans):
-                ans = s
-
+        print(len(states))
         return ans
 
 
 
 
 s = Solution()
-print(s.shortestSuperstring(["alex","loves","leetcode"]))
-print(s.shortestSuperstring(["catg","ctaagt","gcta","ttca","atgcatc"]))
-print(s.shortestSuperstring(["pqtifawzoessrpjwnjf","wnjfjehefpipubizjx","vpmafqkvixcumugp","tzucldkoizjhyat","umugpqtifawzoes","zjxtifiolejwstzuc","pjwnjfjehefpipub","ifiolejwstzucldko"]))
-
-import time
-t0 = time.time()
-# print(s.shortestSuperstring(["ppgortnmsy","czmysoeeyugbiylso","nbfzpppvhbjydtx","rnzynedhoiunkpon","ornzynedhoiunkpo","ylsomoktkyfgljcf","jtvkrornzynedhoiunk","hvhhihwdffmxnczmyso","ktkyfgljcfbkqcpp","nzynedhoiunkponbfz","nedhoiunkponbfzpppvh"]))
-print(s.shortestSuperstring(["vgrikrnwezryimj","umwgwvzpsfpmctzt","pjourlpgeemdjor","urlpgeemdjorpzbkbz","jorpzbkbzcqyewih","xuwkzvoczozhhvf","ihbumoogibirbsvch","nwezryimjivvpjourlp","kzvoczozhhvfwgeplv","ezryimjivvpjourlpgee","zhhvfwgeplvqngglu","rikrnwezryimjivvp"]))
-print(time.time() - t0)
+print(s.tallestBillboard( [1,2,3,6]))
+print(s.tallestBillboard([1,2,3,4,5,6]))
+print(s.tallestBillboard([1,2]))
+print(s.tallestBillboard([175,145,180,156,151,132,131,150,154,144,137,128,156,161,150]))
+print(s.tallestBillboard([1,2,4,8,16,32,64,128,256,512,50,50,50,150,150,150,100,100,100,123]))

@@ -10,3 +10,11 @@ import heapq
 
 import bisect
 
+
+class A:
+    x = "x"
+    y = 3
+    
+print(A.x)
+print(A.y)
+print(dir(A))

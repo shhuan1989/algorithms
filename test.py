@@ -11,10 +11,22 @@ import heapq
 import bisect
 
 
-class A:
-    x = "x"
-    y = 3
+
+
+
+
+def f1n(n):
+    ans = 1
+    d = 1
+    for i in range(1, n+1):
+        d /= i
+        ans += d
     
-print(A.x)
-print(A.y)
-print(dir(A))
+    return ans
+
+
+def f2n(n):
+    return pow(1+1/n, n)
+
+for n in range(100000, 100010):
+    print(f1n(n), f2n(n))

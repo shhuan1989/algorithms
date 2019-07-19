@@ -26,9 +26,9 @@ def suffixArray(anStr):
     suffix = [[ranks[v], ranks[anStr[i + 1]] if i < n - 1 else -1, i] for i, v in enumerate(anStr)]
     suffix.sort()
     
-    k = 4
+    k = 2
     ind = [0] * n
-    while k < 2 * n:
+    while k < n:
         rank, prank = suffix[0][0], suffix[0][0]
         for i in range(1, n):
             if suffix[i][0] != prank or suffix[i][1] != suffix[i - 1][1]:
@@ -38,7 +38,7 @@ def suffixArray(anStr):
             ind[suffix[i][2]] = i
         
         for i in range(n):
-            nextInd = suffix[i][2] + k // 2
+            nextInd = suffix[i][2] + k
             suffix[i][1] = suffix[ind[nextInd]][0] if nextInd < n else -1
         
         suffix.sort()
@@ -74,4 +74,13 @@ def morganAndString(a, b):
 
 
 if __name__ == '__main__':
-    print(morganAndString('JACK', 'DANIEL'))
+    # print(morganAndString('JACK', 'DANIEL'))
+    t0 = time.time()
+    with open('morgan_string.txt', 'r') as f:
+        T = int(f.readline())
+        for ti in range(T):
+            a = f.readline().strip()
+            b = f.readline().strip()
+            print(morganAndString(a, b))
+            
+    print(time.time() - t0)

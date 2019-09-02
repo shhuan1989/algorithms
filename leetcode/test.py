@@ -13,40 +13,39 @@ created by shhuan at 2017/10/15 22:16
 """
 
 
-class Solution:
-    def monotoneIncreasingDigits(self, N):
-        """
-        :type N: int
-        :rtype: int
-        """
-
-        digits = int(math.log(N, 10))
-        resLen = 0
-        for i in range(digits+1, 0, -1):
-            if int('1' * i) <= N:
-                resLen = i
-                break
-
-        res = ''
-        last = 0
-        for i in range(resLen):
-            for d in range(9, last-1, -1):
-                if int(res + str(d) * (resLen-i)) <= N:
-                    res = res + str(d)
-                    last = d
-                    break
-
-        return int(res)
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
 
 
+def discount(val):
+    if val >= 299:
+        return val - 60
+    if val >= 199:
+        return val - 30
+
+    return val
+
+xy = [[109, 54], [215, 108], [128, 68]]
+
+ans = []
+for a in range(10):
+    for b in range(10):
+        for c in range(10):
+            amounts = [a, b, c]
+            cost = sum([amounts[i] * xy[i][0] for i in range(3)])
+            amount = sum([amounts[i] * xy[i][1] for i in range(3)])
+            if amount == 0 or amount > 300:
+                continue
+
+            dcost = discount(cost)
+            avg = dcost / amount
+            ans.append((avg, dcost, cost, amount, a, b, c))
+ans.sort()
+print(ans[:10])
 
 
-
-s = Solution()
-# print(s.monotoneIncreasingDigits(10))
-print(s.monotoneIncreasingDigits(1234))
-print(s.monotoneIncreasingDigits(100))
-print(s.monotoneIncreasingDigits(187918369))
-t0 = time.time()
-print(s.monotoneIncreasingDigits(521596916))
-print(time.time() - t0)
+print(discount(512))

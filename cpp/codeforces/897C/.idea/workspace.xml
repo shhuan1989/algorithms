@@ -12,7 +12,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a204fc8d-3c35-4e36-b86b-b8dca349fe90" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../codeforces/1083A.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../codeforces/1095D.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../codeforces/1096A.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../codeforces/1096B.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../codeforces/1096C.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../codeforces/1108E1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../codeforces/1114C.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../codeforces/196C.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../codeforces/FireUtils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../leetcode/hard/Distinct_Subsequence_II.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../leetcode/hard/Least_Operators_To_Express_Number.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../leetcode/hard/Number_Of_Atoms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../leetcode/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../leetcode/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../test.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +40,11 @@
     <session id="-1236525497">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.3" value="5" />
-          <entry key="project.open.time.4" value="3" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.4" value="4" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -59,8 +73,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="18" selection-end-line="161" selection-end-column="1" />
+            <state relative-caret-position="-722">
+              <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,7 +117,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="width" value="1300" />
     <option name="height" value="1400" />
@@ -154,6 +171,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,7 +183,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -224,11 +241,12 @@
       <workItem from="1540909053550" duration="69000" />
       <workItem from="1540910379567" duration="435000" />
       <workItem from="1540910842454" duration="494000" />
+      <workItem from="1550938940227" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7280000" />
+    <option name="totallyTimeSpent" value="7289000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -240,9 +258,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2062" height="1126" extended-state="7" />
+    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19161677" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09580839" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -288,8 +306,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="18" selection-end-line="161" selection-end-column="1" />
+        <state relative-caret-position="-722">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

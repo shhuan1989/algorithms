@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # -*- coding: utf-8 -*-
 
 """
@@ -52,20 +53,58 @@ class Solution:
             dp2 = [0]
             x = 1
             for n in range(1, N + 1):
+=======
+# -*- coding:utf-8 -*-
+
+"""
+
+created by shuangquan.huang at 9/10/19
+
+"""
+
+import collections
+import time
+import os
+import sys
+import bisect
+import heapq
+
+
+class Solution(object):
+    def superEggDrop(self, K, N):
+
+        # Right now, dp[i] represents dp(1, i)
+        dp = range(N+1)
+
+        for k in range(2, K+1):
+            # Now, we will develop dp2[i] = dp(k, i)
+            dp2 = [0]
+            x = 1
+            for n in range(1, N+1):
+>>>>>>> update
                 # Let's find dp2[n] = dp(k, n)
                 # Increase our optimal x while we can make our answer better.
                 # Notice max(dp[x-1], dp2[n-x]) > max(dp[x], dp2[n-x-1])
                 # is simply max(T1(x-1), T2(x-1)) > max(T1(x), T2(x)).
+<<<<<<< HEAD
                 while x < n and max(dp[x - 1], dp2[n - x]) > max(dp[x], dp2[n - x - 1]):
                     x += 1
 
                 # The final answer happens at this x.
                 dp2.append(1 + max(dp[x - 1], dp2[n - x]))
+=======
+                while x < n and max(dp[x-1], dp2[n-x]) > max(dp[x], dp2[n-x-1]):
+                    x += 1
+
+                # The final answer happens at this x.
+                dp2.append(1 + max(dp[x-1], dp2[n-x]))
+>>>>>>> update
 
             dp = dp2
 
         return dp[-1]
 
+<<<<<<< HEAD
         class Solution3(object):
             def superEggDrop(self, K, N):
                 def f(x):
@@ -102,8 +141,35 @@ class Solution:
         return dp[N][K]
 
 
+=======
+    def superEggDrop2(self, K, N):
+        def f(x):
+            ans = 0
+            r = 1
+            for i in range(1, K + 1):
+                r *= x - i + 1
+                r //= i
+                ans += r
+                if ans >= N: break
+            return ans
+    
+        lo, hi = 1, N
+        while lo < hi:
+            mi = (lo + hi) // 2
+            if f(mi) < N:
+                lo = mi + 1
+            else:
+                hi = mi
+        return lo
+    
+>>>>>>> update
 s = Solution()
 # print(s.superEggDrop(1, 2))
 # print(s.superEggDrop(2, 6))
 # print(s.superEggDrop(3, 14))
+<<<<<<< HEAD
 print(s.superEggDrop(2, 5000))
+=======
+print(s.superEggDrop(11, 8177))
+print(s.superEggDrop(10, 8099))
+>>>>>>> update

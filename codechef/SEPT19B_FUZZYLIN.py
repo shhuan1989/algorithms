@@ -13,3 +13,6 @@ import sys
 import bisect
 import heapq
 import math
+
+
+print()

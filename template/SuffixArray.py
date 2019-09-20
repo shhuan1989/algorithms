@@ -23,7 +23,7 @@ def build_suffix_array(anStr):
     
     # rank, prank, index
     n = len(anStr)
-    suffix = [[ranks[v], ranks[anStr[i + 1]] if i < n - 1 else -1, i] for i, v in enumerate(anStr)]
+    suffix = [[ranks[v], (ranks[anStr[i + 1]] if i < n - 1 else -1), i] for i, v in enumerate(anStr)]
     suffix.sort()
     
     k = 1
@@ -50,7 +50,7 @@ def build_suffix_array(anStr):
 def search_in_suffix_array(suffix: typing.List[int], pattern: str, txt: str) -> int:
     """
     https://www.geeksforgeeks.org/suffix-array-set-1-introduction/
-    To search a pattern in a text, we preprocess the text and build a suffix array of the text.
+    To search a pattern in a text, we pre-process the text and build a suffix array of the text.
     Since we have a sorted array of all suffixes, Binary Search can be used to search.
     Following is the search function. Note that the function doesn’t report all occurrences of pattern,
     it only report one of them.

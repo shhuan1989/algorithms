@@ -1,14 +1,19 @@
+# -*- coding: utf-8 -*-
+
+"""
+created by shhuan at 2019/9/22 12:24
+
+"""
+
 import math
-import os
-import random
-import re
-import sys
-
-from typing import List
-import bisect
-
 import collections
-from functools import cmp_to_key
+import bisect
+import heapq
+import time
+import itertools
+import sys
+from typing import List
+
 
 class Solution:
     def sortItems(self, n: int, m: int, group: List[int], beforeItems: List[List[int]]) -> List[int]:
@@ -107,12 +112,8 @@ class Solution:
 
         return ans
 
-
-
 s = Solution()
-# print(s.sortItems(n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3,6],[],[],[]]))
-# print(s.sortItems(n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3],[],[4],[]]))
-#
-# print(s.sortItems(8, 2, [-1,-1,1,0,0,1,0,-1], [[],[6],[5],[6],[3],[],[4],[]]))
-
-print(s.sortItems(10, 4, [2,2,2,1,0,1,3,2,0,1], [[7,6,2,5,3],[],[],[],[7],[],[],[],[],[]]))
+print(s.sortItems(n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3,6],[],[],[]]))
+print(s.sortItems(n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3],[],[4],[]]))
+print(s.sortItems(8, 2, [-1,-1,1,0,0,1,0,-1], [[],[6],[5],[6],[3],[],[4],[]]))
+print(s.sortItems(10, 4, [2, 2, 2, 1, 0, 1, 3, 2, 0, 1], [[7, 6, 2, 5, 3], [], [], [], [7], [], [], [], [], []]))

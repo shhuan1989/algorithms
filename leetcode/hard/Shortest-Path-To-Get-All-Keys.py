@@ -13,88 +13,65 @@ created by shhuan at 2018/12/21 22:57
 
 """
 
-
 class Solution(object):
     def shortestPathAllKeys(self, grid):
-        """
-        :type grid: List[str]
-        :rtype: int
-        """
+        R, C = len(grid), len(grid[0])
 
-        def iskey(val):
-            return 'a' <= val <= 'z'
+        # The points of interest
+        location = {v: (r, c)
+                    for r, row in enumerate(grid)
+                    for c, v in enumerate(row)
+                    if v not in '.#'}
 
-        def islock(val):
-            return 'A' <= val <= 'Z'
+        def neighbors(r, c):
+            for cr, cc in ((r-1, c), (r, c-1), (r+1, c), (r, c+1)):
+                if 0 <= cr < R and 0 <= cc < C:
+                    yield cr, cc
 
-        def lockofkey(key):
-            return key.upper()
+        # The distance from source to each point of interest
+        def bfs_from(source):
+            r, c = location[source]
+            seen = [[False] * C for _ in range(R)]
+            seen[r][c] = True
+            queue = collections.deque([(r, c, 0)])
+            dist = {}
+            while queue:
+                r, c, d = queue.popleft()
+                if source != grid[r][c] != '.':
+                    dist[grid[r][c]] = d
+                    continue # Stop walking from here if we reach a point of interest
+                for cr, cc in neighbors(r, c):
+                    if grid[cr][cc] != '#' and not seen[cr][cc]:
+                        seen[cr][cc] = True
+                        queue.append((cr, cc, d+1))
+            return dist
 
-        def keyoflock(lock):
-            return lock.lower()
+        dists = {place: bfs_from(place) for place in location}
+        target_state = 2 ** sum(p.islower() for p in location) - 1
 
-        def keytoid(key):
-            return ord(key) - ord('a')
-
-        def addkey(state, key):
-            return state | (1 << keytoid(key))
-
-        def unlock(lock, keys):
-            key = keyoflock(lock)
-            return keys & (1 << keytoid(key)) > 0
-
-        N, M = len(grid), len(grid[0])
-
-        start = None
-        keys = {}
-        locks = {}
-        for r in range(N):
-            for c in range(M):
-                v = grid[r][c]
-                if v == '@':
-                    start = (r, c)
-                elif iskey(v):
-                    keys[v] = (r, c)
-                elif islock(v):
-                    locks[v] = (r, c)
-
-        nkeys = len(keys)
-        dist = [[[float('inf') for _ in range(2**nkeys)] for _ in range(M)] for _ in range(N)]
-        r, c = start
-        dist[r][c][0] = 0
-        q = [(0, 0, r, c, 0)]
-        heapq.heapify(q)
-        ans = float('inf')
-        while q:
-            kc, d, r, c, k = heapq.heappop(q)
-            print(r, c, k, d)
-            if k == (1 << nkeys) - 1:
-                ans = min(ans, d)
-
-            if d > dist[r][c][k]:
+        #Dijkstra
+        pq = [(0, '@', 0)]
+        final_dist = collections.defaultdict(lambda: float('inf'))
+        final_dist['@', 0] = 0
+        while pq:
+            d, place, state = heapq.heappop(pq)
+            if final_dist[place, state] < d:
                 continue
+            if state == target_state:
+                return d
+            for destination, d2 in dists[place].items():
+                state2 = state
+                if destination.islower(): #key
+                    state2 |= (1 << (ord(destination) - ord('a')))
+                elif destination.isupper(): #lock
+                    if not(state & (1 << (ord(destination) - ord('A')))): #no key
+                        continue
 
-            for nr, nc in [(r+1, c), (r-1, c), (r, c+1), (r, c-1)]:
-                if 0 <= nr < N and 0 <= nc < M and grid[nr][nc] != '#':
-                    v = grid[nr][nc]
-                    if iskey(v):
-                        nk = addkey(k, v)
-                        if d < dist[nr][nc][nk]:
-                            dist[nr][nc][nk] = d + 1
-                            # q.append((nr, nc, nk, d + 1))
-                            heapq.heappush(q, (kc-1, d+1, nr, nc, nk))
-                    elif islock(v):
-                        if unlock(v, k) and d < dist[nr][nc][k]:
-                            dist[nr][nc][k] = d + 1
-                            # q.append((nr, nc, k, d + 1))
-                            heapq.heappush(q, (kc, d + 1, nr, nc, k))
-                    elif d < dist[nr][nc][k]:
-                            dist[nr][nc][k] = d + 1
-                            # q.append((nr, nc, k, d + 1))
-                            heapq.heappush(q, (kc, d + 1, nr, nc, k))
+                if d + d2 < final_dist[destination, state2]:
+                    final_dist[destination, state2] = d + d2
+                    heapq.heappush(pq, (d+d2, destination, state2))
 
-        return ans if ans < float('inf') else -1
-
+        return -1
 
 s = Solution()
 for row in ["@...a",".###A","b.BCc"]:

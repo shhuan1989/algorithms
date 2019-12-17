@@ -15,90 +15,56 @@ created by shhuan at 2019/12/16 12:42
 
 """
 
+class Solution(object):
+    def containVirus(self, grid):
+        R, C = len(grid), len(grid[0])
+        def neighbors(r, c):
+            for nr, nc in ((r-1, c), (r+1, c), (r, c-1), (r, c+1)):
+                if 0 <= nr < R and 0 <= nc < C:
+                    yield nr, nc
 
-class Solution:
-    def containVirus(self, grid: List[List[int]]) -> int:
-
-        closed = set()
-        infects = collections.defaultdict(int)
-        barries = collections.defaultdict(list)
-        id = 1
-        N, M = len(grid), len(grid[0])
-        for r in range(N):
-            for c in range(M):
-                if grid[r][c] == 1:
-                    id += 1
-                    grid[r][c] = id
-                    q = [(r, c)]
-                    inf = set()
-                    bar = 0
-                    while q:
-                        x, y = q.pop()
-                        for nx, ny in [(x - 1, y), (x + 1, y), (x, y - 1), (x, y + 1)]:
-                            if 0 <= nx < N and 0 <= ny < M:
-                                if grid[nx][ny] == 1:
-                                    grid[nx][ny] = id
-                                    q.append((nx, ny))
-                                elif grid[nx][ny] == 0:
-                                    inf.add((nx, ny))
-                                    bar += 1
-                    infects[id] = len(inf)
-                    barries[id] = bar
+        def dfs(r, c):
+            if (r, c) not in seen:
+                seen.add((r, c))
+                regions[-1].add((r, c))
+                for nr, nc in neighbors(r, c):
+                    if grid[nr][nc] == 1:
+                        dfs(nr, nc)
+                    elif grid[nr][nc] == 0:
+                        frontiers[-1].add((nr, nc))
+                        perimeters[-1] += 1
 
         ans = 0
         while True:
-            infects = {k: v for k, v in infects.items() if k not in closed}
-            if not infects:
-                break
+            #Find all regions, with associated frontiers and perimeters.
+            seen = set()
+            regions = []
+            frontiers = []
+            perimeters = []
+            for r, row in enumerate(grid):
+                for c, val in enumerate(row):
+                    if val == 1 and (r, c) not in seen:
+                        regions.append(set())
+                        frontiers.append(set())
+                        perimeters.append(0)
+                        dfs(r, c)
 
-            maxinfect = [k for k, v in infects.items() if v == max(infects.values())][0]
-            ans += barries[maxinfect]
-            for r in range(N):
-                done = False
-                for c in range(M):
-                    if grid[r][c] == maxinfect:
-                        closed.add(grid[r][c])
-                        checked = set()
-                        for x in range(N):
-                            for y in range(M):
-                                if grid[x][y] > 1 and grid[x][y] not in closed and grid[x][y] not in checked:
-                                    checked.add(grid[x][y])
-                                    # start infecting
-                                    cid = grid[x][y]
-                                    q = [(x, y)]
-                                    vis = {(x, y)}
-                                    neighbors = []
-                                    while q:
-                                        u, v = q.pop()
-                                        for nu, nv in [(u + 1, v), (u - 1, v), (u, v + 1), (u, v - 1)]:
-                                            if 0 <= nu < N and 0 <= nv < M:
-                                                if grid[nu][nv] == 0 and (nu, nv) not in vis:
-                                                    vis.add((nu, nv))
-                                                    neighbors.append((nu, nv))
-                                                elif grid[nu][nv] == cid and (nu, nv) not in vis:
-                                                    vis.add((nu, nv))
-                                                    q.append((nu, nv))
-                                    for u, v in neighbors:
-                                        grid[u][v] = cid
+            #If there are no regions left, break.
+            if not regions: break
 
-                                    ninf = set()
-                                    bar = 0
-                                    for u, v in neighbors:
-                                        for nu, nv in [(u + 1, v), (u - 1, v), (u, v + 1), (u, v - 1)]:
-                                            if 0 <= nu < N and 0 <= nv < M and grid[nu][nv] == 0:
-                                                ninf.add((nu, nv))
-                                                bar += 1
-                                    infects[cid] = len(ninf)
-                                    barries[cid] = bar
-                        done = True
-                        break
-                if done:
-                    break
+            #Add the perimeter of the region which will infect the most squares.
+            triage_index = frontiers.index(max(frontiers, key = len))
+            ans += perimeters[triage_index]
+
+            #Triage the most infectious region, and spread the rest of the regions.
+            for i, reg in enumerate(regions):
+                if i == triage_index:
+                    for r, c in reg:
+                        grid[r][c] = -1
+                else:
+                    for r, c in reg:
+                        for nr, nc in neighbors(r, c):
+                            if grid[nr][nc] == 0:
+                                grid[nr][nc] = 1
+
         return ans
-
-s = Solution()
-print(s.containVirus(grid =
-[[0,1,0,0,0,0,0,1],
- [0,1,0,0,0,0,0,1],
- [0,0,0,0,0,0,0,1],
- [0,0,0,0,0,0,0,0]]))

@@ -15,6 +15,7 @@ created by shhuan at 2019/12/12 20:50
 
 """
 
+
 class Solution:
     def encode(self, s: str) -> str:
         N = len(s)
@@ -78,12 +79,13 @@ class Solution:
                         dp[i][l] = ns
 
         return dp[0][N]
-
+        
 s = Solution()
 print(s.encode('aaa'))
-print(s.encode('aaaaa'))
-print(s.encode('aaaaaaaaaa'))
-print(s.encode('aabcaabcd'))
-print(s.encode('abbbabbbc'))
-print(s.encode('abbbabbbcabbbabbbc'))
-print(s.encode('aaaaaaaaaabbbaaaaabbb'))
+print(s.encode('aaaaaa'))
+# print(s.encode('aaaaaaaaaa'))
+# print(s.encode('aabcaabcd'))
+# print(s.encode('abbbabbbcabbbabbbc'))
+# print(s.encode('slkjdfbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'))
+# print(s.encode('aaaaaaabbaaabb'))
+# print(s.encode('aaaaaaaaaabbbaaaaabbb'))

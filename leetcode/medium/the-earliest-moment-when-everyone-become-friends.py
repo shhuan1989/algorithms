@@ -11,7 +11,7 @@ import sys
 from typing import List
 
 """
-created by shhuan at 2019/12/16 22:43
+created by shhuan at 2019/12/18 21:53
 
 """
 
@@ -22,6 +22,9 @@ class UnionSet:
 
     def uinon(self, u, v):
         pu, pv = self.find(u), self.find(v)
+        if pu == pv:
+            return -1
+
         kpu, kpv = max(self.klen[pu], 1), max(self.klen[pv], 1)
 
         if kpu < kpv:
@@ -30,6 +33,8 @@ class UnionSet:
         else:
             self.root[pv] = pu
             self.klen[pu] = kpu + kpv
+
+        return kpu + kpv
 
     def find(self, u):
         if u not in self.root:
@@ -47,22 +52,15 @@ class UnionSet:
 
 
 class Solution:
-    def minCostToSupplyWater(self, n: int, wells: List[int], pipes: List[List[int]]) -> int:
-        edges = [(w, u, v) for u, v, w in pipes] + [(w, 0, i+1) for i, w in enumerate(wells)]
-
-        edges.sort()
-
-        ans = 0
+    def earliestAcq(self, logs: List[List[int]], N: int) -> int:
+        logs.sort()
         us = UnionSet()
-        for w, u, v in edges:
-            if us.same(u, v):
-                continue
-            ans += w
-            us.uinon(u, v)
+        for t, a, b in logs:
+            c = us.uinon(a, b)
+            if c == N:
+                return t
 
-        return ans
-
+        return -1
 
 s = Solution()
-print(s.minCostToSupplyWater(n = 3, wells = [1,2,2], pipes = [[1,2,1],[2,3,1]]))
-print(s.minCostToSupplyWater(5, [46012,72474,64965,751,33304], [[2,1,6719],[3,2,75312],[5,3,44918]]))
+print(s.earliestAcq(logs = [[20190101,0,1],[20190104,3,4],[20190107,2,3],[20190211,1,5],[20190224,2,4],[20190301,0,3],[20190312,1,2],[20190322,4,5]], N = 6))

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # -*- coding: utf-8 -*-
 
 import math
@@ -38,3 +39,7 @@ class Solution:
             return min(dp(i, mid, 1) + dp(mid + 1, j, m - 1) for mid in range(i, j, K - 1))
         res = dp(0, n - 1, 1)
         return res if res < inf else -1
+    
+s = Solution()
+# print(s.mergeStones([3, 2, 4, 1], 2))
+print(s.mergeStones([69,39,79,78,16,6,36,97,79,27,14,31,4], 2))

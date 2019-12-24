@@ -18,27 +18,25 @@ created by shhuan at 2019/12/22 23:37
 
 class Solution:
     def threeSumSmaller(self, nums: List[int], target: int) -> int:
-        l, r, N = 0, len(nums)-1, len(nums)
         nums.sort()
 
-        ans = 0
-        while l < r:
-            s = nums[l] + nums[r]
-            while s >= target and r > l:
-                r -= 1
-                s = nums[l] + nums[r]
-            if r == l:
-                break
-            for i in range(l+1, r+1):
-                s = nums[l] + nums[i]
-                t = target-s-1
-                j = bisect.bisect_right(nums, t)
-                j = min(j, l-1)
-                ans += j + 1
-            l += 1
+        def twoSumSmaller(nums, startIndex, target):
+            s = 0
+            left = startIndex
+            right = len(nums) - 1
+            while left < right:
+                if nums[left] + nums[right] < target:
+                    s += right - left
+                    left += 1
+                else:
+                    right -= 1
+            return s
 
-        return ans
+        s = 0
+        for i in range(len(nums)-1):
+            s += twoSumSmaller(nums, i+1, target-nums[i])
 
+        return s
 
 s = Solution()
 print(s.threeSumSmaller([3,1,0,-2], 4))

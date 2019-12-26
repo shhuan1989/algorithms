@@ -123,27 +123,7 @@ class Solution:
 
         
         return ans
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-            
-            
-        
+    
     
     def confusingNumberII_2(self, N: int) -> int:
         

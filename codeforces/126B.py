@@ -1,9 +1,9 @@
 # -*- coding:utf-8 -*-
 
 """
-
 created by shuangquan.huang at 12/25/19
 
+choose the longest substring which is the prefix, suffix and another substring of given string
 """
 
 import collections

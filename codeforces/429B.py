@@ -1,70 +1,57 @@
-# -*- coding: utf-8 -*-
+# -*- coding:utf-8 -*-
 
-import math
+"""
+
+created by shuangquan.huang at 1/7/20
+
+"""
+
 import collections
+import time
+import os
+import sys
 import bisect
 import heapq
-import time
-import random
-import itertools
-import sys
 from typing import List
-
-"""
-created by shhuan at 2020/1/7 09:47
-
-"""
-
-
-def meet(N, M, A, R, C):
-
-    dp = [[0 for _ in range(M)] for _ in range(N)]
-    sa, sb = 0, 0
-    for r in range(N):
-        for c in range(M):
-            dp[r][c] = max(dp[r-1][c] if r-1>=0 else 0, dp[r][c-1] if c-1 >= 0 else 0) + A[r][c]
-            if r == R and c == C:
-                sa += dp[r][c]
-                break
-    dp = [[0 for _ in range(M)] for _ in range(N)]
-    for r in range(R, N):
-        for c in range(C, M):
-            dp[r][c] = max(dp[r-1][c] if r-1>=0 else 0, dp[r][c-1] if c-1 >= 0 else 0) + A[r][c]
-    sa += dp[N-1][M-1]
-    sa -= 2 * A[R][C]
-
-    dpb = [[0 for _ in range(M)] for _ in range(N)]
-    for r in range(N-1, -1, -1):
-        for c in range(M):
-            dpb[r][c] = max(dpb[r+1][c] if r+1 < N else 0, dpb[r][c-1] if c - 1 >= 0 else 0) + A[r][c]
-            if r == R and c == C:
-                sb += dpb[r][c]
-                break
-
-    dpb = [[0 for _ in range(M)] for _ in range(N)]
-    for r in range(R, -1, -1):
-        for c in range(C, M):
-            dpb[r][c] = max(dpb[r + 1][c] if r + 1 < N else 0, dpb[r][c - 1] if c - 1 >= 0 else 0) + A[r][c]
-    sb += dp[0][M-1]
-    sb -= 2 * A[R][C]
-
-    return sa + sb
 
 
 def solve(N, M, A):
+    dpa = [[0 for _ in range(M+2)] for _ in range(N+2)]
+    dpb = [[0 for _ in range(M+2)] for _ in range(N+2)]
+    dpc = [[0 for _ in range(M+2)] for _ in range(N+2)]
+    dpd = [[0 for _ in range(M+2)] for _ in range(N+2)]
+    
+    for r in range(1, N+1):
+        for c in range(1, M + 1):
+            dpa[r][c] = max(dpa[r-1][c], dpa[r][c-1]) + A[r][c]
+    
+    for r in range(N, 0, -1):
+        for c in range(M, 0, -1):
+            dpb[r][c] = max(dpb[r+1][c], dpb[r][c+1]) + A[r][c]
+    
+    for r in range(N, 0, -1):
+        for c in range(1, M+1):
+            dpc[r][c] = max(dpc[r+1][c], dpc[r][c-1]) + A[r][c]
+    
+    for r in range(1, N+1):
+        for c in range(M, 0, -1):
+            dpd[r][c] = max(dpd[r-1][c], dpd[r][c+1]) + A[r][c]
+
     ans = 0
-    meet(N, M, A, 2, 2)
-    for r in range(N):
-        for c in range(M):
-            m = meet(N, M, A, r, c)
-            ans = max(ans, m)
+    for r in range(2, N):
+        for c in range(2, M):
+            a = dpa[r][c-1] + dpb[r][c+1] + dpc[r+1][c] + dpd[r-1][c]
+            b = dpc[r][c-1] + dpd[r][c+1] + dpa[r-1][c] + dpb[r+1][c]
+            ans = max(ans, a, b)
+            
     return ans
 
 
 N, M = map(int, input().split())
-A = []
+A = [[0 for _ in range(M+2)]]
 for i in range(N):
-    row = [int(x) for x in input().split()]
+    row = [0] + [int(x) for x in input().split()] + [0]
     A.append(row)
+A.append([0 for _ in range(M+2)])
 
 print(solve(N, M, A))

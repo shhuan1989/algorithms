@@ -1,22 +1,4 @@
 # -*- coding: utf-8 -*-
-
-import math
-import collections
-import bisect
-import heapq
-import time
-import random
-import itertools
-import sys
-from typing import List
-
-"""
-created by shhuan at 2019/12/31 21:17
-
-"""
-
-# -*- coding:utf-8 -*-
-
 """
 
 created by shuangquan.huang at 12/31/19
@@ -35,13 +17,11 @@ import math
 
 def solve(A):
     N = len(A)
-
     K = max(int(math.log2(N)), 1)
     # K = N
     presum = [0 for _ in range(N + 1)]
     for i, v in enumerate(A):
         presum[i + 1] = presum[i] + v
-
     ans = 0
     for k in range(1, K + 1):
         wc = collections.defaultdict(int)
@@ -122,7 +102,8 @@ if test:
 
     print('DONE')
 
-
-# A = [int(x) for x in list(input())]
-# # A = [1 for _ in range(2*10**5)]
-# print(solve(A))
+import random
+A = [1] + [random.randint(0, 1) for _ in range(2*10**5)] + [1]
+t0 = time.time()
+solve(A)
+print(time.time() - t0)

@@ -26,6 +26,7 @@ class Solution:
                     ans.add(text[i: i+l])
         return len(ans)
 
+
 s = Solution()
 print(s.distinctEchoSubstrings('aaaaaaaaaa'))
 print(s.distinctEchoSubstrings('abcabcabc'))

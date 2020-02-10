@@ -20,26 +20,16 @@ def solve(N, M, A):
     def check(ops):
         pv = 0
         for v in A:
-            if v-ops >= 0 and v+ops < M:
+            if v + ops < M:
                 if v + ops < pv:
                     return False
-                pv = max(pv, v-ops)
-            elif v - ops >= 0 and v + ops >= M:
-                l = (v + ops) % M
-                if l >= pv:
-                    pass
-                else:
-                    l, r = v-ops, M-1
-                    pv = max(pv, l)
-            elif v - ops < 0 and v + ops < M:
-                if v + ops >= pv:
-                    pass
-                else:
-                    l = (v-ops) % M
-                    pv = max(pv, l)
+                pv = max(pv, v)
             else:
-                pass
-
+                d = (v + ops) % M
+                if d >= pv:
+                    pass
+                else:
+                    pv = max(pv, v)
         return True
 
     lo, hi = 0, max(N, M)

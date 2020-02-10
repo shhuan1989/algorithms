@@ -26,32 +26,57 @@ import sys
 import bisect
 import heapq
 
-N, M = map(int, input().split())
 
-voters = collections.defaultdict(list)
-
-for i in range(N):
-    p, c = map(int, input().split())
-    voters[p].append(c)
-
-for p in voters.keys():
-    voters[p] = list(sorted(voters[p], reverse=True))
-
-ans = float('inf')
-for x in range(N+1):
-    cnt = len(voters[1])
-    cost = 0
-    a = []
-    for i in range(2, M+1):
-        a.extend(voters[i][:x])
-        cost += sum(voters[i][x:] or [0])
-        cnt += max(0, len(voters[i]) - x)
-    a.sort()
+def solve(N, M, A):
+    votes = [[] for _ in range(M+1)]
+    for p, v in A:
+        votes[p].append(v)
     
-    if cnt <= x and len(a) >= x-cnt+1:
-        cost += sum(a[:x-cnt+1])
-        ans = min(ans, cost)
-    elif cnt > x:
-        ans = min(ans, cost)
+    for p in range(1, M+1):
+        votes[p].sort()
+    
+    own = len(votes[1])
+    votes = votes[2:]
+    votes.sort(reverse=True, key=len)
+    size = [len(v) for v in votes]
+    if not size or own > size[0]:
+        return 0
+    
+    nvotes = len(votes)
+    ans = float('inf')
+    for buy in range((size[0]-own)//2+1, min(N, (N+1) // 2 + 1) + 1):
+        cost = 0
+        target = own + buy
+        done = 0
+        
+        for p in range(nvotes):
+            if size[p] >= target:
+                t = size[p] - target + 1
+                cost += sum(votes[p][: t] or [0])
+                done += t
+            else:
+                break
+        if done >= buy:
+            ans = min(ans, cost)
+        else:
+            more = buy - done
+            q = []
+            for p in range(nvotes):
+                t = max(size[p] - target + 1, 0)
+                q.extend(votes[p][t: t+more])
+            q.sort()
+            cost += sum(q[:more])
+            ans = min(ans, cost)
+        
+    return ans
 
-print(ans)
+
+N, M = map(int, input().split())
+A = []
+for i in range(N):
+    p, v = map(int, input().split())
+    A.append((p, v))
+
+print(solve(N, M, A))
+    
+

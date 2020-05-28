@@ -8,33 +8,32 @@ import bisect
 import collections
 import heapq
 
+import numpy as np
 
 
-def cal(x):
-    y = x // 12
-    
-    if y < 3000:
-        return x - x * 0.03
-    elif y < 12000:
-        return x - x * 0.1 - 210
-    elif y < 25000:
-        return x - x * 0.2 - 1410
-    elif y < 35000:
-        return x - x * 0.25 - 2660
-    elif y < 55000:
-        return x - x * 0.3 - 4410
-    elif y < 80000:
-        return x - x * 0.35 - 7160
-    else:
-        return x - x * 0.45 - 15160
-    
-    
-import matplotlib.pyplot as plt
+def cal(path):
+    with open(path, 'r') as f:
+        a, b = [], []
+        for line in f.readlines():
+            line = line.strip()
+            m = re.search('^(\d+(\.\d+))\s*%$', line)
+            if m:
+                a.append(float(m.group(1)))
+            
+            if re.fullmatch('^\d+$', line):
+                b.append(float(line))
+        
+        a1 = np.average(a[::2])
+        a2 = np.average(a[1::2])
+        print(a1, a2)
+        
+        # print(a, b)
+        # aa = np.average(a) * 1000
+        # ab = np.average(b)
+        # print(aa, ab, ab / (aa + ab))
+        
 
-x = [i for i in range(1, 200000)]
-y = [cal(v) for v in x]
-plt.plot(x, y)
-plt.show()
 
-print(cal(160000))
-print(cal(140000))
+
+cal('/Users/shuangquan.huang/Desktop/a.txt')
+# cal('/Users/shuangquan.huang/Desktop/b.txt')

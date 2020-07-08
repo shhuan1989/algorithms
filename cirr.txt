@@ -1,0 +1,14 @@
+2.27.4	0.0019
+google home	0.0029
+iOS	0.0025
+Android	0.0011
+Chrome 83	0.00094
+2.26.2	0.0014
+Chrome 84	0.015
+Chrome 79	0.011
+Chrome 80	0.0026
+Chrome 83	0.0025
+Android	0.0015
+iOS	0.0014
+google home	0.0010
+Chrome 81	0.00084

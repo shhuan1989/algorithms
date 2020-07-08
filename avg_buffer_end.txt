@@ -1,0 +1,12 @@
+Chromecast Gen 1 1,975.53
+Chromecast 1,650.03
+Chromecast Gen 2 1,585.43
+Chromecast Gen 3 1,309.59
+Chromecast Ultra 864.82
+Google Nest Hub 833.94
+Chromecast 2,170.91
+Chromecast Gen 1 2,140.67
+Chromecast Gen 2 1,689.73
+Chromecast Gen 3 1,387.44
+Chromecast Ultra 871.54
+Google Nest Hub 660.88

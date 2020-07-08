@@ -18,11 +18,11 @@ from typing import List
 class Solution:
     def largestSumOfAverages(self, A: List[int], K: int) -> float:
         N = len(A)
-        dp = [[0 for _ in range(K + 1)] for _ in range(N + 1)]
+        dp = [[0.0 for _ in range(K + 1)] for _ in range(N + 1)]
 
-        presum = [0] * (N+1)
-        for i in range(N):
-            presum[i+1] = presum[i] + A[i]
+        presum = [0]
+        for v in A:
+            presum.append(presum[-1] + v)
 
         def avg(i, j):
             l = j-i

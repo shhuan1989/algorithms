@@ -1,0 +1,12 @@
+Chromecast Gen 1 0.0020
+Google Nest Hub 0.0018
+Chromecast 0.0012
+Chromecast Gen 3 0.00065
+Chromecast Gen 2 0.00063
+Chromecast Ultra 0.00062
+Chromecast 0.0040
+Chromecast Gen 1 0.0027
+Google Nest Hub 0.0012
+Chromecast Gen 2 0.00063
+Chromecast Gen 3 0.00063
+Chromecast Ultra 0.00059

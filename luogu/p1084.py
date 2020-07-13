@@ -114,15 +114,17 @@ if __name__ == '__main__':
                         nd = r - DIST[k][0]
                         if nd > 0:
                             over[nd] += c
-                needs.discard(k)
             else:
                 if NECK[k] == k:
                     for r, c in cks[k]:
                         nd = r - DIST[k][0]
                         if nd > 0:
                             over[nd] += c
+            needs.discard(k)
 
-        neckdist = list(sorted({DIST[NECK[u]][0] for u in needs}))
+        neckdist = [DIST[NECK[u]][0] for u in needs]
+        neckdist.sort()
+
         overd = list(sorted(over.keys()))
         oi = 0
         for d in neckdist:
@@ -146,4 +148,3 @@ if __name__ == '__main__':
             lo = m + 1
 
     print(lo if lo < INF else -1)
-

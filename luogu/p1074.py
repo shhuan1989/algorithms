@@ -123,32 +123,10 @@ if __name__ == '__main__':
     def getpoint(r, c):
         return 10 - dist2center(r, c)
 
-
-    ANS = [0]
-    REST_NUM = [9 for _ in range(10)]
-    DIST = [1, 8, 16, 24, 32]
-
-
-    def getmaxrestscore():
-        vs = []
-        for i in range(1, 10):
-            vs += [i] * REST_NUM[i]
-
-        ds = []
-        for i in range(4, -1, -1):
-            ds += [10 - i] * DIST[i]
-
-        return sum([a * b for a, b in zip(vs, ds)])
-
-
-    def dfs(rest, zeros, score):
+    def dfs(rest):
         # print(rest)
         if not rest:
-            ANS[0] = max(score, ANS[0])
-            return score
-
-        if score + getmaxrestscore() < ANS[0]:
-            return 0
+            return getscore()
 
         xr = rest[0]
         rest = rest[1:]
@@ -156,24 +134,18 @@ if __name__ == '__main__':
         pss = [getposs(xr, c) for c in zis]
         x = 0
         for row in permpss(pss, 0, []):
-            sdelta = 0
             for c, v in zip(zis, row):
                 A[xr][c] = v
                 ROW_USED[xr][v] = True
                 COL_USED[c][v] = True
                 REG_USED[getregion(xr, c)][v] = True
-                sdelta += getpoint(xr, c) * v
-                REST_NUM[v] -= 1
-                DIST[dist2center(xr, c)] -= 1
 
-            x = max(x, dfs(rest, zeros - len(zis), score + sdelta))
+            x = max(x, dfs(rest))
             for c, v in zip(zis, row):
                 A[xr][c] = 0
                 ROW_USED[xr][v] = False
                 COL_USED[c][v] = False
                 REG_USED[getregion(xr, c)][v] = False
-                REST_NUM[v] += 1
-                DIST[dist2center(xr, c)] += 1
 
         return x
 
@@ -189,7 +161,7 @@ if __name__ == '__main__':
         for c in range(9):
             v = A[r][c]
             rid = getregion(r, c)
-            if COL_USED[c][v] or ROW_USED[r][v] or REG_USED[rid][v]:
+            if v > 0 and (COL_USED[c][v] or ROW_USED[r][v] or REG_USED[rid][v]):
                 print(-1)
                 exit(0)
             COL_USED[c][v] = True
@@ -198,14 +170,11 @@ if __name__ == '__main__':
             if A[r][c] == 0:
                 zeros += 1
                 rz += 1
-            REST_NUM[A[r][c]] -= 1
-            if A[r][c] > 0:
-                DIST[dist2center(r, c)] -= 1
         if rz > 0:
             rowzeros.append((rz, r))
 
     rowzeros.sort()
     searchrows = [r for z, r in rowzeros]
-    ans = dfs(searchrows, zeros, getscore())
+    ans = dfs(searchrows)
     ans = ans if ans > 0 else -1
     print(ans)

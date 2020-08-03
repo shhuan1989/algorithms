@@ -36,6 +36,7 @@ if __name__ == '__main__':
     def manacher(s):
         # print(s)
         t = '#'.join(list(s))
+        t = '#' + t + '#'
         nt = len(t)
         width = [1 for _ in range(nt)]
 
@@ -56,16 +57,15 @@ if __name__ == '__main__':
                 answ = width[i]
                 ansi = i
 
-        return (ansi-answ+2)//2, (ansi+answ+1)//2 - 1
+        return (ansi-answ+2)//2, (ansi+answ+1)//2 - 2
 
     l, r = manacher(w)
+    # while l >= 0 and not text[l].isalpha():
+    #     l -= 1
+    # l += 1
+    # while r < len(text) and not text[r].isalpha():
+    #     r += 1
+    # r -= 1
     print(r-l+1)
     pl, pr = index[l], index[r]
     print(text[pl: pr+1])
-
-
-
-
-
-
-

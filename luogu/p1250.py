@@ -2,7 +2,7 @@
 
 """
 
-created by shuangquan.huang at 2020/7/21
+created by shuangquan.huang at 2020/8/3
 
 """
 
@@ -13,7 +13,3 @@ import sys
 import bisect
 import heapq
 from typing import List
-
-
-if __name__ == '__main__':
-    pass

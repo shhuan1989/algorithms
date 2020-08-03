@@ -1,62 +1,36 @@
-# -*- coding: utf-8 -*-
+# -*- coding:utf-8 -*-
 
-import math
+"""
+
+created by shuangquan.huang at 2020/8/3
+
+"""
+
 import collections
+import time
+import os
+import sys
 import bisect
 import heapq
-import time
-import random
-import itertools
-import sys
 from typing import List
 
-"""
-created by shhuan at 2020/7/28 18:46
 
-"""
-
-
-
-perm = [0, 1]
-for i in range(2, 32):
-    perm.append(perm[-1] * i)
-
-
-def ncr(c, r):
-    if c < r:
+def solve(N, K):
+    K -= 1
+    if K == 0:
         return 0
-    if c-r < r:
-        return ncr(c, c-r)
-    if r == 1:
-        return c
-    if r == 0:
-        return 1
+    ans = []
+    for i in range(1, N + 1):
+        if K == 0:
+            break
+        if K <= 1 << (N - i):
+            ans.append(i)
+            K -= 1
+        else:
+            K -= 1 << (N - i)
+    return ' '.join(map(str, ans))
 
-    return ncr(c-1, r) + ncr(c-1, r-1)
 
 if __name__ == '__main__':
-    N, K = map(int, input().split())
-
-    ans = []
-    def dfs(rest, k):
-        if k <= 0:
-            return
-
-        n = len(rest)
-        y = sum([ncr(n-1, i) * perm[i] for i in range(1, n)] or [0])
-
-        # if y == k:
-        #     for v in rest:
-        #         ans.append(v)
-        #     return
-
-        for x in range(len(rest)+1):
-            if x * y == k - 1:
-                ans.append(rest[x])
-                break
-            elif x * y > k:
-                ans.append(rest[x-1])
-                dfs(rest[:x-1] + rest[x:], k-(x-1)*y-1)
-
-    dfs([i for i in range(1, N+1)], K)
-    print(' '.join(map(str, ans)))
+    N, K = map(int, input().strip().split())
+    print(solve(N, K))

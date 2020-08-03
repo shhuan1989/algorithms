@@ -7,8 +7,6 @@ created by shuangquan.huang at 2020/7/16
 """
 import sys
 import random
-import time
-from memory_profiler import profile
 
 INF = 10 ** 9 + 7
 MAXN = 10**5+5
@@ -196,9 +194,7 @@ def inorder(now):
     return inorder(tre[now].left) + [tre[now].key] + inorder(tre[now].right)
 
 
-def main():
-    sys.stdin = open('P3369_7.in', 'r')
-    t0 = time.time()
+if __name__ == '__main__':
     N = int(input())
     ans = []
     ansb = []
@@ -228,17 +224,3 @@ def main():
             ansb.append(op)
 
     print('\n'.join(map(str, ans)))
-    print(time.time() - t0)
-
-if __name__ == '__main__':
-    import cProfile, pstats
-    pr = cProfile.Profile()
-    pr.enable()
-    main()
-
-    pr.disable()
-    sortby = 'cumulative'
-    out = sys.stdout
-    ps = pstats.Stats(pr, stream=out).sort_stats(sortby)
-    ps.print_stats()
-    out.close()

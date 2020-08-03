@@ -16,7 +16,7 @@ from typing import List
 
 if __name__ == '__main__':
     N = int(input())
-
+    
     A = []
     G = collections.defaultdict(list)
     for i in range(N):
@@ -29,11 +29,11 @@ if __name__ == '__main__':
         else:
             G[i] = [i]
         A.append(name)
-
+    
     MARK = [-1 for _ in range(N)]
     VIS = [-1 for _ in range(N)]
-
-
+    
+    
     def dfs(u, tim):
         for v in G[u]:
             if VIS[v] == tim:
@@ -42,15 +42,15 @@ if __name__ == '__main__':
             if MARK[v] < 0 or dfs(MARK[v], tim):
                 MARK[v] = u
                 return True
-
+        
         return False
-
-
+    
+    
     tim = 1
     for i in range(N):
         dfs(i, tim)
         tim += 1
-
+    
     # print(MARK)
     # print(ans)
     # print(A)

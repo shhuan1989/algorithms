@@ -2,7 +2,7 @@
 
 """
 
-created by shuangquan.huang at 2020/7/21
+created by shuangquan.huang at 2020/7/9
 
 """
 
@@ -16,4 +16,7 @@ from typing import List
 
 
 if __name__ == '__main__':
-    pass
+    H = [int(x) for x in input().split()]
+    K = int(input()) + 30
+    
+    print(len([v for v in H if v <= K]))

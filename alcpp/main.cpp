@@ -26,46 +26,69 @@
 #define MAXN 500005
 #define MAXM 1000005
 #define INF 1000000007
+#define LL long long
+#define ll long long
+#define N 500008
 
 using namespace std;
 
-int lp[MAXN];
-vector<int> pr;
-
-int mypow(int a, int b) {
-	if (a == 0) {
-		return 0;
-	}
-	if (b == 0) {
-		return 1;
-	}
-
-	int c = mypow(a, b/2);
-
-	return b % 2 == 0 ? c * c : c * c *a;
+ll n,m,ans;
+ll to[N];
+struct node{
+	ll to,nex;
+}e[N];
+ll x,y,tot;
+ll head[N];
+bool vis[N];
+void add(ll a,ll b)
+{
+	e[++tot].to=b;
+	e[tot].nex=head[a];
+	head[a]=tot;
 }
-
-long long mypow(long long b, long long p, long long k) {
-	if (b == 0) {
-		return 0;
-
+bool find(ll x)
+{
+	ll xx;
+	for(ll i=head[x];i;i=e[i].nex)
+	{
+		xx=e[i].to;
+		if(!vis[xx])
+		{
+			vis[xx]=1;
+			if(!to[xx]||find(to[xx]))
+			{
+				to[xx]=x;
+				return 1;
+			}
+		}
 	}
-	if (p == 0) {
-		return 1LL;
-	}
-
-	long long h = mypow(b, p/2, k);
-	long long s = (h * h) % k;
-	return p % 2 == 0 ? s : (s*b) % k;
+	return 0;
 }
 
 int main() {
 	std::cin.tie (0);
 	ios_base::sync_with_stdio(false);
 
-	int b, p, k;
-	cin >> b >> p >> k;
-	cout << b << "^" << p << " mod " << k << "=" << mypow(b, p, k) % k << endl;
+//	read(n);read(m);
+//	read(x);read(y);
+	cin >> n >> m;
+	cin >> x >> y;
+	while(x!=-1&&y!=-1)
+	{
+		if(x<=n&&y<=m) add(x,y);
+//		read(x);read(y);
+		cin >> x >> y;
+	}
+	for(ll i=1;i<=n;i++)
+	{
+		memset(vis,0,sizeof(vis));
+		if(find(i)) ans++;
+	}
+	cout<<ans<<endl;
+	for(ll i=n+1;i<=m;i++)
+	{
+		if(to[i]) cout<<to[i]<<" "<<i<<endl;
+	}
 
 	return 0;
 }

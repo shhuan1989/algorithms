@@ -12,28 +12,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a204fc8d-3c35-4e36-b86b-b8dca349fe90" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../codeforces/1270A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../codeforces/1270B.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../codeforces/1270C.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../codeforces/1270D.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../codeforces/1270E.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../codeforces/1270F.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../codeforces/448D.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../leetcode/easy/find-n-unique-integers-sum-up-to-zero.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../leetcode/medium/all-elements-in-two-binary-search-trees.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../leetcode/medium/jump-game-iii.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../leetcode/medium/verbal-arithmetic-puzzle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../topcoder/square-language.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithms/algorithms/algorithms.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithms/algorithms/algorithms.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithms/algorithms/x64/Debug/algorithms.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithms/algorithms/x64/Debug/algorithms.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithms/algorithms/x64/Debug/algorithms.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithms/algorithms/x64/Debug/algorithms.tlog/CL.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithms/algorithms/x64/Debug/algorithms.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithms/algorithms/x64/Debug/algorithms.tlog/link.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithms/algorithms/x64/Debug/vc142.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithms/algorithms/x64/Debug/vc142.idb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithms/algorithms/x64/Debug/vc142.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithms/algorithms/x64/Debug/vc142.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithms/x64/Debug/algorithms.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithms/x64/Debug/algorithms.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithms/x64/Debug/algorithms.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithms/x64/Debug/algorithms.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithms/x64/Debug/algorithms.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithms/x64/Debug/algorithms.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../leetcode/easy/count-good-triplets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../leetcode/hard/get-the-maximum-score.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../leetcode/medium/find-the-winner-of-an-array-game.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../leetcode/medium/minimum-swaps-to-arrange-a-binary-grid.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/P2762_2.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/P2762_2.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/P2766_7.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/P2766_7.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/P3355_3.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/P3355_3.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p1247.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p1248.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p2576.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p2576_dinic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p2576_ek.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p2576_ff.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p2756_3.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p2761.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p2762.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p2762.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p2763.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p2763.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p2766.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p2770.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p2770.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p3355.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p3358.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p3358.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../luogu/p4016.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../luogu/p1243.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../luogu/p1243.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,12 +55,12 @@
     <session id="-1236525497">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.3" value="5" />
-          <entry key="project.open.time.4" value="4" />
+          <entry key="project.open.time.4" value="5" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -81,7 +89,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
+            <state relative-caret-position="-702">
               <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -126,8 +134,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="width" value="1301" />
+    <option name="x" value="-12" />
+    <option name="width" value="1302" />
     <option name="height" value="1401" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -179,6 +187,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,7 +199,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,11 +259,12 @@
       <workItem from="1540910842454" duration="494000" />
       <workItem from="1550938940227" duration="9000" />
       <workItem from="1577848067289" duration="44000" />
+      <workItem from="1596873830871" duration="16000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7333000" />
+    <option name="totallyTimeSpent" value="7349000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -269,7 +278,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2575" height="1415" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.096543506" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0973381" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -315,7 +324,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
+        <state relative-caret-position="-702">
           <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />

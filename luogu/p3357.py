@@ -13,6 +13,7 @@ import sys
 import bisect
 import heapq
 from typing import List
+import math
 
 
 class Node:
@@ -38,21 +39,20 @@ edges = [Node(0, 0, 0, 0, 0) for _ in range(MAXM)]
 tot = [1]
 
 
-def add_edge(u, v, cap, flow, cost):
+def add_edge(u, v, cap, cost):
     tot[0] += 1
     i = tot[0]
     edges[i].start = u
     edges[i].end = v
     edges[i].cap = cap
-    edges[i].flow = flow
     edges[i].cost = cost
     edges[i].next = head[u]
     head[u] = i
 
 
-def add(u, v, cap, flow, cost):
-    add_edge(u, v, cap, flow, cost)
-    add_edge(v, u, 0, 0, -cost)
+def add(u, v, cap, cost):
+    add_edge(u, v, cap, cost)
+    add_edge(v, u, 0, -cost)
 
 
 def spfa(start, end):
@@ -99,44 +99,53 @@ def max_flow_ek(start, end):
     return ans
 
 
+def distance(x0, y0, x1, y1):
+    return int(math.floor(math.sqrt((x1-x0)**2 + (y1-y0)**2)))
+
+
 def solve(N, K, A):
     points = set()
-    for l, r in A:
+    B = []
+    for x0, y0, x1, y1, d in A:
+        l = x0 * 2
+        r = x1 * 2
+        if x0 == x1:
+            r += 1
+        else:
+            l += 1
         points.add(l)
         points.add(r)
-    # print(N, K)
-    # print('\n'.join(['{} {}'.format(u, v) for u, v in sorted(A)]))
+        B.append((l, r, d))
+
     points = list(sorted(points))
     vi = {v: (i + 1) for i, v in enumerate(points)}
-    A = [(vi[l], vi[r], r - l) for l, r in A]
-    points = [vi[v] for v in points]
+    B = [(vi[l], vi[r], d) for l, r, d in B]
+    M = len(points)
+    start, end = 0, M + 1
+    add(start, 1, K, 0)
+    add(M, end, INF, 0)
 
-    start, end = 0, points[-1] + 1
-    add(start, points[0], K, 0, 0)
-    add(points[-1], end, INF, 0, 0)
+    for i in range(M+1):
+        add(i, i+1, INF, 0)
 
-    for i in range(len(points) - 1):
-        add(points[i], points[i + 1], INF, 0, 0)
-
-    for l, r, d in A:
-        add(l, r, 1, 0, d)
+    for l, r, d in B:
+        add(l, r, 1, d)
 
     return max_flow_ek(start, end)
 
 
-import random
-
 if __name__ == '__main__':
+    # sys.stdin = open('p3357.in', 'r')
     N, K = map(int, input().split())
     A = []
     for i in range(N):
-        l, r = map(int, input().split())
-        A.append((l, r))
-    # N = 2
-    # K = 1
-    # A = [(66, 127), (73, 159)]
+        x0, y0, x1, y1 = map(int, input().split())
+        if x0 > x1:
+            x0, y0, x1, y1 = x1, y1, x0, y0
+        A.append((x0, y0, x1, y1, distance(x0, y0, x1, y1)))
 
     print(solve(N, K, A))
+
 
 
 

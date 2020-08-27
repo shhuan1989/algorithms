@@ -16,22 +16,38 @@ from typing import List
 import math
 
 INF = 10 ** 9 + 7
-MAXN = 2000
+MAXN = 5000
 MAXM = 10 ** 5
 
 head = [-1 for _ in range(MAXN)]
 pre = [-1 for _ in range(MAXN)]
 dist = [-1 for _ in range(MAXN)]
-inq = [-1 for _ in range(MAXN)]
-incf = [-1 for _ in range(MAXN)]
+inq = [False for _ in range(MAXN)]
+incf = [0 for _ in range(MAXN)]
 
 cap = [0 for _ in range(MAXM)]
-to = [0 for _ in range(MAXM)]
-nxt = [0 for _ in range(MAXM)]
+to = [-1 for _ in range(MAXM)]
+nxt = [-1 for _ in range(MAXM)]
 cost = [0 for _ in range(MAXM)]
 
 tot = [1]
 
+def reset():
+    tot[0] = 1
+    for i in range(MAXN):
+        head[i] = -1
+        pre[i] = -1
+        dist[i] = -1
+        inq[i] = False
+        incf[i] = 0
+    
+    for i in range(MAXM):
+        cap[i] = 0
+        to[i] = -1
+        nxt[i] = -1
+        cost[i] = 0
+        
+    
 
 def draw(start, end):
     import networkx as nx
@@ -121,44 +137,76 @@ def max_flow_ek(start, end):
     return ans
 
 
-def distance(xa, ya, xb, yb):
-    return int(math.floor(math.sqrt((xa - xb) ** 2 + (ya - yb) ** 2)))
-
-
 if __name__ == '__main__':
-    # sys.stdin = open('p3357.in', 'r')
-    N, K = map(int, input().split())
+    # sys.stdin = open('p4013.in', 'r')
+    M, N = map(int, input().split())
     
-    points = set()
     A = []
+    C = [0]
     for i in range(N):
-        xa, ya, xb, yb = map(int, input().split())
-        d = distance(xa, ya, xb, yb)
-        xa <<= 1
-        xb <<= 1
-        if xa == xb:
-            xb |= 1
-        else:
-            xa |= 1
-        
-        points.add(xa)
-        points.add(xb)
-        A.append((xa, xb, d))
+        row = [int(x) for x in input().split()]
+        A.append(row)
+        C.append(C[-1] + len(row))
     
-    points = list(sorted(points))
-    vi = {v: i + 1 for i, v in enumerate(points)}
+    def get_id(r, c, t):
+        return C[r] + c + 1 + C[-1]*t
     
-    M = len(points)
-    start, end = 0, M + 1
+    start, end = 0, 2 * C[-1] + 1000
     
-    add(start, 1, K, 0)
-    for i in range(1, M):
-        add(i, i + 1, INF, 0)
+    # q1
+    for c in range(M):
+        add(start, get_id(0, c, 0), 1,  0)
     
-    for xa, xb, d in A:
-        add(vi[xa], vi[xb], 1, d)
+    for r in range(N-1):
+        row = A[r]
+        for c in range(len(row)):
+            add(get_id(r, c, 0), get_id(r, c, 1), 1, A[r][c])
+            add(get_id(r, c, 1), get_id(r+1, c, 0), 1, 0)
+            add(get_id(r, c, 1), get_id(r+1, c+1, 0), 1, 0)
     
-    add(M, end, INF, 0)
+    for c in range(len(A[-1])):
+        add(get_id(N-1, c, 0), get_id(N-1, c, 1), 1, A[N-1][c])
+        add(get_id(N-1, c, 1), end, 1, 0)
     
-    # draw(start, end)
     print(max_flow_ek(start, end))
+    
+    
+    # q2
+    reset()
+    for c in range(M):
+        add(start, get_id(0, c, 0), 1, 0)
+
+    for r in range(N - 1):
+        row = A[r]
+        for c in range(len(row)):
+            add(get_id(r, c, 0), get_id(r, c, 1), INF, A[r][c])
+            add(get_id(r, c, 1), get_id(r + 1, c, 0), 1, 0)
+            add(get_id(r, c, 1), get_id(r + 1, c + 1, 0), 1, 0)
+
+    for c in range(len(A[-1])):
+        add(get_id(N - 1, c, 0), get_id(N - 1, c, 1), INF, A[N - 1][c])
+        add(get_id(N - 1, c, 1), end, INF, 0)
+
+    print(max_flow_ek(start, end))
+
+    # q3
+    reset()
+    for c in range(M):
+        add(start, get_id(0, c, 0), 1, 0)
+
+    for r in range(N - 1):
+        row = A[r]
+        for c in range(len(row)):
+            add(get_id(r, c, 0), get_id(r, c, 1), INF, A[r][c])
+            add(get_id(r, c, 1), get_id(r + 1, c, 0), INF, 0)
+            add(get_id(r, c, 1), get_id(r + 1, c + 1, 0), INF, 0)
+
+    for c in range(len(A[-1])):
+        add(get_id(N - 1, c, 0), get_id(N - 1, c, 1), INF, A[N - 1][c])
+        add(get_id(N - 1, c, 1), end, INF, 0)
+
+    print(max_flow_ek(start, end))
+    
+
+    
+    

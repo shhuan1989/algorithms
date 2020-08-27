@@ -16,7 +16,7 @@ from typing import List
 import math
 
 INF = 10 ** 9 + 7
-MAXN = 2000
+MAXN = 5000
 MAXM = 10 ** 5
 
 head = [-1 for _ in range(MAXN)]
@@ -108,57 +108,82 @@ def spfa(start, end):
     return dist[end] > 0
 
 
-def max_flow_ek(start, end):
+def max_flow_ek(start, end, id2rc):
     ans = 0
+    path = []
     while spfa(start, end):
         u = end
+        p = []
+        np = []
         while u != start:
             cap[pre[u]] -= incf[end]
             cap[pre[u] ^ 1] += incf[end]
-            u = to[pre[u] ^ 1]
+            pu = to[pre[u] ^ 1]
+            
+            r, c = id2rc[u]
+            pr, pc = id2rc[pu]
+            if r == pr and c == pc + 1:
+                p.append(1)
+            elif r == pr + 1 and c == pc:
+                p.append(0)
+            
+            if not np or np[-1] != id2rc[u]:
+                np.append(id2rc[u])
+            u = pu
         ans += dist[end] * incf[end]
+        # print(np[::-1])
+        path.append(p[::-1])
     
-    return ans
-
-
-def distance(xa, ya, xb, yb):
-    return int(math.floor(math.sqrt((xa - xb) ** 2 + (ya - yb) ** 2)))
+    return path
 
 
 if __name__ == '__main__':
-    # sys.stdin = open('p3357.in', 'r')
-    N, K = map(int, input().split())
+    # sys.stdin = open('p3356.in', 'r')
+    K = int(input())
+    M = int(input())
+    N = int(input())
     
-    points = set()
     A = []
     for i in range(N):
-        xa, ya, xb, yb = map(int, input().split())
-        d = distance(xa, ya, xb, yb)
-        xa <<= 1
-        xb <<= 1
-        if xa == xb:
-            xb |= 1
-        else:
-            xa |= 1
-        
-        points.add(xa)
-        points.add(xb)
-        A.append((xa, xb, d))
+        row = [int(x) for x in input().split()]
+        A.append(row)
     
-    points = list(sorted(points))
-    vi = {v: i + 1 for i, v in enumerate(points)}
+    def getid(r, c, k):
+        return r * M + c + 1 + k * N * M
     
-    M = len(points)
-    start, end = 0, M + 1
+    start, end = 0, getid(N-1, M-1, 1) + 1
     
-    add(start, 1, K, 0)
-    for i in range(1, M):
-        add(i, i + 1, INF, 0)
+    add(start, getid(0, 0, 0), K, 0)
     
-    for xa, xb, d in A:
-        add(vi[xa], vi[xb], 1, d)
     
-    add(M, end, INF, 0)
+    id2rc = {start: (0, 0), end: (N-1, M-1)}
+    for r in range(N):
+        for c in range(M):
+            id2rc[getid(r, c, 0)] = (r, c)
+            id2rc[getid(r, c, 1)] = (r, c)
+            
+    for r in range(N):
+        for c in range(M):
+            if A[r][c] == 1:
+                continue
+
+            add(getid(r, c, 0), getid(r, c, 1), INF, 0)
+            if A[r][c] == 2:
+                add(getid(r, c, 0), getid(r, c, 1), 1, 1)
+                
+            if c + 1 < M:
+                if A[r][c + 1] != 1:
+                    add(getid(r, c, 1), getid(r, c+1, 0), INF, 0)
+            if r + 1 < N:
+                if A[r+1][c] != 1:
+                    add(getid(r, c, 1), getid(r+1, c, 0), INF, 0)
     
+    add(getid(N-1, M-1, 1), end, INF, 0)
     # draw(start, end)
-    print(max_flow_ek(start, end))
+    # print(max_flow_ek(start, end, id2rc))
+    ans = max_flow_ek(start, end, id2rc)
+    for i, p in enumerate(ans):
+        print('\n'.join(['{} {}'.format(i+1, v) for v in p]))
+    
+    
+    

@@ -23,72 +23,35 @@
 #include <assert.h>
 #include <fstream>
 
-#define MAXN 500005
-#define MAXM 1000005
+#define MAXN 50005
+#define MAXM 200000
 #define INF 1000000007
 #define LL long long
 #define ll long long
-#define N 500008
 
 using namespace std;
 
-ll n,m,ans;
-ll to[N];
-struct node{
-	ll to,nex;
-}e[N];
-ll x,y,tot;
-ll head[N];
-bool vis[N];
-void add(ll a,ll b)
-{
-	e[++tot].to=b;
-	e[tot].nex=head[a];
-	head[a]=tot;
-}
-bool find(ll x)
-{
-	ll xx;
-	for(ll i=head[x];i;i=e[i].nex)
-	{
-		xx=e[i].to;
-		if(!vis[xx])
-		{
-			vis[xx]=1;
-			if(!to[xx]||find(to[xx]))
-			{
-				to[xx]=x;
-				return 1;
-			}
-		}
-	}
-	return 0;
-}
+int wc[1000];
 
 int main() {
 	std::cin.tie (0);
 	ios_base::sync_with_stdio(false);
 
-//	read(n);read(m);
-//	read(x);read(y);
+	fill_n(wc, 1000, 0);
+	int n, m;
 	cin >> n >> m;
-	cin >> x >> y;
-	while(x!=-1&&y!=-1)
-	{
-		if(x<=n&&y<=m) add(x,y);
-//		read(x);read(y);
-		cin >> x >> y;
+	int v;
+	for (int i = 0; i < m; ++i) {
+		cin >> v;
+		wc[v] += 1;
 	}
-	for(ll i=1;i<=n;i++)
-	{
-		memset(vis,0,sizeof(vis));
-		if(find(i)) ans++;
+
+	for (int i = 0; i < 1000; ++i) {
+		for (int j = 0; j < wc[i]; ++j) {
+			cout << i << " ";
+		}
 	}
-	cout<<ans<<endl;
-	for(ll i=n+1;i<=m;i++)
-	{
-		if(to[i]) cout<<to[i]<<" "<<i<<endl;
-	}
+	cout << endl;
 
 	return 0;
 }

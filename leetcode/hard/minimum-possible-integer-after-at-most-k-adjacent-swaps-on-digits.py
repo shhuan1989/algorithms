@@ -20,17 +20,16 @@ class Solution:
         if not num:
             return ''
         
-        num = [int(x) for x in num]
-        num_len = len(num)
-        num_index = collections.defaultdict(list)
+        num = [int(v) for v in num]
+        n = len(num)
+        vi = [collections.deque([]) for _ in range(10)]
         for i, v in enumerate(num):
-            num_index[v].append(i)
+            vi[v].append(i)
         
-        uniq_nums = list(sorted(num_index.keys()))
-        fenwick_bits = [0 for _ in range(num_len)]
+        fenwick_bits = [0 for _ in range(n)]
         
         def update(index, val):
-            while index < num_len:
+            while index < n:
                 fenwick_bits[index] += val
                 index |= index + 1
         
@@ -42,45 +41,33 @@ class Solution:
                 
             return s
         
-        for i in range(num_len):
-            update(i, 1)
-        
         ans = []
-        step = 0
-        removed = [False for _ in range(num_len)]
-        for v in uniq_nums:
-            for i in num_index[v]:
-                nstep = step + query(i-1)
-                if nstep <= k:
-                    step = nstep
-                    ans.append(v)
-                    update(i, -1)
-                    removed[i] = True
-                else:
-                    k -= step
-                    rest = [num[j] for j in range(num_len) if not removed[j]]
-                    while k > 0:
-                        min_num, min_num_index = 9, -1
-                        for j in range(k+1):
-                            if min_num_index < 0 or rest[j] < min_num:
-                                min_num = rest[j]
-                                min_num_index = j
-                        ans.append(min_num)
-                        rest = rest[:min_num_index] + rest[min_num_index+1:]
-                        k -= min_num_index
-                    ans += rest
-                    return ''.join(map(str, ans))
+        removed = [False for _ in range(n)]
+        for i in range(n):
+            if k <= 0:
+                break
+            for v in range(10):
+                if vi[v]:
+                    j = vi[v][0]
+                    dist = j - query(j - 1)
+                    if dist <= k:
+                        k -= dist
+                        ans.append(v)
+                        update(j, 1)
+                        removed[j] = True
+                        vi[v].popleft()
+                        break
         
+        ans += [num[i] for i in range(n) if not removed[i]]
         return ''.join(map(str, ans))
+        
     
     
 if __name__ == '__main__':
     s = Solution()
+    print(s.minInteger("294984148179", 11))
     print(s.minInteger('4321', 4))
     print(s.minInteger('100', 1))
     print(s.minInteger('36789', 1000))
     print(s.minInteger('22', 22))
     print(s.minInteger('9438957234785635408', 23) == '0345989723478563548')
-    
-                
-        

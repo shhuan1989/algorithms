@@ -1,0 +1,5 @@
+[Chromecast 2.30.0 release]
+We have rollout to 5%, QoS metrics looks a little worse, we can keep watching.
+[Chromecast 3.0.0]
+We have made a plan about the MVP.
+Will starting refact CAF module.

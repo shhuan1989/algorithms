@@ -16,6 +16,7 @@ from typing import List
 
 
 class Solution:
+
     def avoidFlood(self, rains: List[int]) -> List[int]:
         # print(len(rains))
         wi = collections.defaultdict(list)
@@ -49,9 +50,12 @@ class Solution:
         return ans
     
     
-s = Solution()
-print(s.avoidFlood([1, 2, 3, 4]))
-print(s.avoidFlood([1,2,0,0,2,1]))
-print(s.avoidFlood([1,2,0,1,2]))
-print(s.avoidFlood([69,0,0,0,69]))
-print(s.avoidFlood([10,20,20]))
+if __name__ == '__main__':
+    s = Solution()
+    print(s.avoidFlood([1, 0, 2, 0, 2, 1]))
+    print(s.avoidFlood([0, 1, 1]))
+    print(s.avoidFlood([1, 2, 3, 4]))
+    print(s.avoidFlood([1, 2, 0, 0, 2, 1]))
+    print(s.avoidFlood([1, 2, 0, 1, 2]))
+    print(s.avoidFlood([69, 0, 0, 0, 69]))
+    print(s.avoidFlood([10, 20, 20]))

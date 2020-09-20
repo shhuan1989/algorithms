@@ -15,98 +15,7 @@ import heapq
 from typing import List
 
 INF = 10 ** 9 + 7
-MAXN = 40000
-MAXM = 2 * 10 ** 5 + MAXN
-
-head = [-1 for _ in range(MAXN)]
-level = [-1 for _ in range(MAXN)]
-
-cap = [-1 for _ in range(MAXM)]
-flow = [0 for _ in range(MAXM)]
-to = [-1 for _ in range(MAXM)]
-nxt = [-1 for _ in range(MAXM)]
-
-tot = [1]
-
-
-def add_edge(u, v, w):
-    tot[0] += 1
-    i = tot[0]
-    cap[i] = w
-    to[i] = v
-    nxt[i] = head[u]
-    head[u] = i
-
-
-def add(u, v, w):
-    add_edge(u, v, w)
-    add_edge(v, u, 0)
-
-
-def bfs(start, end):
-    for i in range(MAXN):
-        level[i] = -1
-    
-    level[start] = 0
-    q = collections.deque([start])
-    while q:
-        u = q.pop()
-        i = head[u]
-        while i > 0:
-            v = to[i]
-            if level[v] < 0 and cap[i] - flow[i] > 0:
-                level[v] = level[u] + 1
-                q.append(v)
-            i = nxt[i]
-    
-    return level[end] > 0
-
-
-def dfs(curr, end, add):
-    if curr == end or add <= 0:
-        return add
-    
-    x = 0
-    i = head[curr]
-    while i > 0 and add > 0:
-        v = to[i]
-        if level[v] == level[curr] + 1 and cap[i] - flow[i] > 0:
-            f = dfs(v, end, min(add, cap[i] - flow[i]))
-            if f > 0:
-                add -= f
-                x += f
-                flow[i] += f
-                flow[i ^ 1] -= f
-        i = nxt[i]
-    
-    return x
-
-
-def dinic(start, end):
-    ans = 0
-    while bfs(start, end):
-        ans += dfs(start, end, INF)
-    
-    return ans
-
-
-def draw():
-    g = collections.defaultdict(list)
-    for u in range(MAXN):
-        i = head[u]
-        while i > 0:
-            if cap[i] > 0:
-                g[u].append((to[i], cap[i]))
-            i = nxt[i]
-    
-    # print(len(g))
-    for u, vs in g.items():
-        for v, w in vs:
-            # ru, cu = (u-1)//(M+1), (u-1) % (M+1)
-            # rv, cv = (v - 1) // (M + 1), (v - 1) % (M + 1)
-            # print('{}-{} {}-{} {}'.format(ru, cu, rv, cv, w))
-            print('{} {}'.format(u, v))
-
+MAXN = 10**5
 
 if __name__ == '__main__':
     N, M = map(int, input().split())
@@ -114,18 +23,20 @@ if __name__ == '__main__':
     for i in range(N):
         row = [int(x) for x in input().split()]
         A.append(row)
-    
-    xymap = {}
-    
-    
+
+
+    def toxy(id):
+        id %= (N + 2) * (M + 2)
+        id -= 1
+        r = id // (M+1)
+        c = id % (M+1)
+        return r, c
+
     def getid(r, c, t):
         v = r * (M + 1) + c + 1 + t * (N + 2) * (M + 2)
-        xymap[v] = (r, c)
         return v
-    
-    
-    start, end = 0, getid(N, M, 1) + 1
-    
+
+    bottom = collections.defaultdict(list)
     for c in range(M):
         wall = N
         vis = set()
@@ -135,13 +46,15 @@ if __name__ == '__main__':
                 wall = r
                 # add(start, getid(wall, c), 1)
             elif A[r][c] == 0:
-                if wall not in vis:
-                    add(start, getid(wall, c, 0), 1)
-                    vis.add(wall)
-                add(getid(wall, c, 0), getid(r, c, 0), 1)
+                # if wall not in vis:
+                #     add(start, getid(wall, c, 0), 1)
+                #     vis.add(wall)
+                # add(getid(wall, c, 0), getid(r, c, 0), 1)
+                bottom[getid(r, c, 0)].append(getid(wall, c, 0))
             else:
                 pass
-    
+
+    right = collections.defaultdict(list)
     for r in range(N):
         wall = M
         vis = set()
@@ -149,30 +62,56 @@ if __name__ == '__main__':
             if A[r][c] == 2:
                 wall = c
             elif A[r][c] == 0:
-                if wall not in vis:
-                    add(getid(r, wall, 1), end, 1)
-                    vis.add(wall)
-                add(getid(r, c, 0), getid(r, wall, 1), 1)
-    
+                # if wall not in vis:
+                #     add(getid(r, wall, 1), end, 1)
+                #     vis.add(wall)
+                # add(getid(r, c, 0), getid(r, wall, 1), 1)
+                right[getid(r, c, 0)].append(getid(r, wall, 1))
+
     # draw()
-    print(dinic(start, end))
-    
+    # print(dinic(start, end))
+
+    g = collections.defaultdict(list)
+    for r in range(N):
+        for c in range(M):
+            id = getid(r, c, 0)
+            for a in bottom[id]:
+                for b in right[id]:
+                    g[a].append(b)
+                    g[b].append(a)
+
+    vis = [0 for _ in range(MAXN)]
+    match = [-1 for _ in range(MAXN)]
+    def dfs(u, tim):
+        for v in g[u]:
+            if vis[v] == tim:
+                continue
+            vis[v] = tim
+            if match[v] < 0 or dfs(match[v], tim):
+                match[u] = v
+                match[v] = u
+                return True
+
+        return False
+
+    tim = 1
+    for i in range(MAXN):
+        if match[i] < 0:
+            tim += 1
+            dfs(i, tim)
+
     ans = []
     for u in range(MAXN):
-        i = head[u]
-        while i > 0:
-            v = to[i]
-            if flow[i] == 1 and v in xymap:
-                r, c = xymap[v]
-                if 0 <= r < N and 0 <= c < M and A[r][c] == 0:
-                    ans.append((r + 1, c + 1))
-                    # print('({}, {}, {}) -> ({}, {}, {})'.format(xymap[u][0], xymap[u][1], u, r, c, v))
-            i = nxt[i]
-    
-    # print(len(ans))
+        if match[u] > u:
+            v = match[u]
+            ru, cu = toxy(u)
+            rv, cv = toxy(v)
+
+            ans.append((rv+1, cu+1))
+
+    print(len(ans))
     print('\n'.join(['{} {}'.format(r, c) for r, c in ans]))
-    
-    # draw()
+
 
 
 

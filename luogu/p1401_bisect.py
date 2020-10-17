@@ -18,7 +18,7 @@ from typing import List
 
 
 MAXN = 300
-MAXM = 100000
+MAXM = 200000
 INF = 10**9+7
 
 
@@ -29,26 +29,30 @@ to = [-1 for _ in range(MAXM)]
 cap = [0 for _ in range(MAXM)]
 flow = [0 for _ in range(MAXM)]
 nxt = [-1 for _ in range(MAXM)]
+dist = [-1 for _ in range(MAXM)]
 
 tot = [1]
 
 
-def add_edge(u, v, c):
+def add_edge(u, v, d, c):
     tot[0] += 1
     i = tot[0]
 
     to[i] = v
     cap[i] = c
+    dist[i] = d
+    flow[i] = 0
     nxt[i] = head[u]
     head[u] = i
 
 
-def add(u, v, c):
-    add_edge(u, v, c)
-    add_edge(v, u, 0)
+def add(u, v, d, c):
+    add_edge(u, v, d, c)
+    add_edge(v, u, d, 0)
     # print(u, v)
 
-def bfs(start, end):
+
+def bfs(start, end, maxd):
     for i in range(MAXN):
         depth[i] = -1
 
@@ -60,17 +64,17 @@ def bfs(start, end):
         i = head[u]
         while i >= 0:
             v = to[i]
-            if depth[v] < 0 and cap[i] - flow[i] > 0:
+            if dist[i] <= maxd and depth[v] < 0 and cap[i] - flow[i] > 0:
                 depth[v] = depth[u] + 1
+                q.append(v)
                 if v == end:
                     return True
-                q.append(v)
             i = nxt[i]
 
     return depth[end] > 0
 
 
-def dfs(curr, end, add):
+def dfs(curr, end, add, maxd):
     if curr == end or add <= 0:
         return add
 
@@ -78,8 +82,8 @@ def dfs(curr, end, add):
     i = head[curr]
     while i >= 0 and add > 0:
         v = to[i]
-        if depth[v] == depth[curr]+1 and cap[i] - flow[i] > 0:
-            f = dfs(v, end, min(add, cap[i] - flow[i]))
+        if dist[i] <= maxd and depth[v] == depth[curr]+1 and cap[i] - flow[i] > 0:
+            f = dfs(v, end, min(add, cap[i] - flow[i]), maxd)
             if f > 0:
                 ret += f
                 add -= f
@@ -90,33 +94,41 @@ def dfs(curr, end, add):
     return ret
 
 
-def max_flow(start, end):
+def max_flow(start, end, maxd, t):
     f = 0
-    while bfs(start, end):
-        f += dfs(start, end, INF)
+    for i in range(MAXM):
+        flow[i] = 0
+    while bfs(start, end, maxd):
+        f += dfs(start, end, INF, maxd)
+        if f >= t:
+            return f
     return f
 
 
 if __name__ == '__main__':
-    sys.stdin = open('P1401_2.in', 'r')
-    t0 = time.time()
+    # sys.stdin = open('P1401_2.in', 'r')
+    # t0 = time.time()
     N, M, T = map(int, input().split())
 
     start, end = 1, N
-    edges = []
+    width = set()
     for _ in range(M):
         u, v, d = map(int, input().split())
-        edges.append((d, u, v))
-    edges.sort()
+        add(u, v, d, 1)
+        add(v, u, d, 1)
+        width.add(d)
 
-    for d, u, v in edges:
-        add(u, v, 1)
-        add(v, u, 1)
-        f = max_flow(start, end)
-        # if f > 0:
-        #     print(d, f)
+    width = list(sorted(width))
+
+    lo, hi = 0, len(width)-1
+    while lo <= hi:
+        mid = (lo + hi) // 2
+        f = max_flow(start, end, width[mid], T)
         if f >= T:
-            print(d)
-            print(time.time() - t0)
-            exit(0)
-        T -= f
+            hi = mid - 1
+        else:
+            lo = mid + 1
+
+    print(width[lo] if lo < len(width) else -1)
+    # print(time.time() - t0)
+

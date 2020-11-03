@@ -16,9 +16,101 @@ created by shhuan at 2020/7/12 10:40
 """
 
 
-
 class Solution:
     def getMinDistSum(self, positions: List[List[int]]) -> float:
+        dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+        
+        eps = 1e-7
+        step = 1.0
+        decay = 0.5
+        
+        n = len(positions)
+        
+        x = sum(pos[0] for pos in positions) / n
+        y = sum(pos[1] for pos in positions) / n
+        
+        # 计算服务中心 (xc, yc) 到客户的欧几里得距离之和
+        getDist = lambda xc, yc: sum(((x - xc) ** 2 + (y - yc) ** 2) ** 0.5 for x, y in positions)
+        
+        while step > eps:
+            modified = False
+            for dx, dy in dirs:
+                xNext = x + step * dx
+                yNext = y + step * dy
+                if getDist(xNext, yNext) < getDist(x, y):
+                    x, y = xNext, yNext
+                    modified = True
+                    break
+            if not modified:
+                step *= (1.0 - decay)
+        
+        return getDist(x, y)
+    
+    def getMinDistSum4(self, positions: List[List[int]]) -> float:
+        n = len(positions)
+        eps = 1e-7
+        
+        def dx(x, y, batch):
+            return sum([(x - a) / (eps + math.sqrt((x - a) ** 2 + (y - b) ** 2)) for a, b in positions])
+        
+        def dy(x, y, batch):
+            return sum([(y - b) / (eps + math.sqrt((x - a) ** 2 + (y - b) ** 2)) for a, b in positions])
+        
+        def dist(x, y):
+            return sum([math.sqrt((x - a) ** 2 + (y - b) ** 2) for a, b in positions])
+        
+        cx = sum([a for a, b in positions]) / n
+        cy = sum([b for a, b in positions]) / n
+        
+        r = 0.99
+        batchsize = 100
+        while True:
+            random.shuffle(positions)
+            
+            xpre = cx
+            ypre = cy
+            cx -= r * dx(cx, cy, positions[:batchsize])
+            cy -= r * dy(cx, cy, positions[:batchsize])
+            r *= 0.999
+            
+            if ((cx - xpre) ** 2 + (cy - ypre) ** 2) ** 0.5 < eps:
+                break
+        
+        return dist(cx, cy)
+    
+    
+    def getMinDistSum3(self, positions: List[List[int]]) -> float:
+        n = len(positions)
+        eps = 1e-7
+        def dx(x, y):
+            return sum([(x - a) / (eps + math.sqrt((x - a) ** 2 + (y - b) ** 2)) for a, b in positions])
+
+        def dy(x, y):
+            return sum([(y - b) / (eps + math.sqrt((x - a) ** 2 + (y - b) ** 2)) for a, b in positions])
+        
+        def dist(x, y):
+            return sum([math.sqrt((x-a)**2+(y-b)**2) for a, b in positions])
+
+        cx = sum([a for a, b in positions]) / n
+        cy = sum([b for a, b in positions]) / n
+        
+        
+        r = 0.99
+        while True:
+            xpre = cx
+            ypre = cy
+            cx -= r * dx(cx, cy)
+            cy -= r * dy(cx, cy)
+            r *= 0.999
+
+            if ((cx - xpre) ** 2 + (cy - ypre) ** 2) ** 0.5 < eps:
+                break
+        
+        return dist(cx, cy)
+            
+        
+    
+    def getMinDistSum2(self, positions: List[List[int]]) -> float:
         n = len(positions)
 
         def fa(x, y):

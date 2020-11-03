@@ -36,6 +36,7 @@ class Solution:
             us = [i for i in range(n)]
             
             if fix >= 0:
+                # mere u, v to a single point v
                 w, u, v, i = edges[fix]
                 cost = w
                 path.append(i)

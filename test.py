@@ -10,50 +10,81 @@ import heapq
 
 import numpy as np
 
+# !/bin/python3
 
+import math
+import os
+import random
+import re
+import sys
 
-class Bundle:
-    def __init__(self, size, count, price):
-        self.size = size
-        self.count = count
-        self.price = price
+# !/bin/python3
 
-    def __cmp__(self, other):
-        return self.size - other.size
-
+import math
+import os
+import random
+import re
+import sys
+import collections
 
 if __name__ == '__main__':
-
-    area = [(200, 500), (250, 90), (120, 90)]
-
-    bundles = [Bundle(60, 4, 49.0), Bundle(30, 9, 18.5)]
-
-    def up(a, b):
-        return a // b if a % b == 0 else a // b + 1
-
-    def dfs(index, pre, precost, area):
-        w, h = area
-        b = bundles[index]
-
-        print(precost, pre, area)
-
-        if index >= len(bundles) - 1:
-            count = up(up(w, b.size) * up(h, b.size), b.count)
-            return precost + count * b.price, pre + [(index, count)]
-
-
-
-        count = up(up(w, b.size) * up(h, b.size), b.count)
-        mincost = float('inf')
-        buy = []
-
-        for i in range(count+1):
-            cost, cb = dfs(index+1, pre + [(index, i)], precost + i * b.price, (w, h - i * b.count // up(w, b.size) * b.size))
-            if cost < mincost:
-                mincost = cost
-                buy = cb
-
-        return mincost, buy
-
-
-    print(dfs(0, [], 0, (200, 500)))
+    dp = [[-1 for _ in range(300005)] for _ in range(25)]
+    
+    
+    
+    def cnt(d, s):
+        if d == -1 and s == 0:
+            return 1
+        elif d == -1:
+            return 0
+        elif dp[d][s] == -1:
+            dp[d][s] = 0
+            i = 0
+            while i < 10 and (1 << d) * i <= s:
+                dp[d][s] += cnt(d-1, s-(1 << d) * i)
+                i += 1
+        return dp[d][s]
+        
+    nm = [cnt(24, i) for i in range(300005)]
+    for i in range(1, 300005):
+        nm[i] += nm[i-1]
+    
+    N = int(input())
+    for _ in range(N):
+        x = int(input())
+        if x == 1:
+            print(0)
+        else:
+            ans = -1
+            lo, hi = 0, 300004
+            while lo <= hi:
+                mid = (lo + hi) // 2
+                if nm[mid] >= x:
+                    ans = mid
+                    hi = mid - 1
+                else:
+                    lo = mid + 1
+            
+            g = x - nm[ans-1]
+            s = ans
+            val = 0
+            d = 0
+            i = -1
+            while cnt(i, s) < g:
+                d = i
+                i += 1
+            
+            d += 1
+            while d >= 0:
+                val = 0
+                for i in range(10):
+                    if s - (1 << d) * i >= 0:
+                        val += cnt(d-1, s-(1<<d)*i)
+                        
+                    if val >= g:
+                        print(i, end='')
+                        g -= val - cnt(d - 1, s - (1 << d) * i)
+                        s -= (1 << d) * i
+                        break
+                d -= 1
+            print()

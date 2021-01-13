@@ -23,23 +23,25 @@ class Fancy:
 
     def __init__(self):
         self.data = [0 for _ in range(MAXN)]
-        self.a = [1 for _ in range(MAXN)]
-        self.b = [0 for _ in range(MAXN)]
+        self.mul = [1 for _ in range(MAXN)]
+        self.add = [0 for _ in range(MAXN)]
         self.index = 0
 
     def append(self, val: int) -> None:
         self.data[self.index] = val
         self.index += 1
-        self.a[self.index] = self.a[self.index-1]
-        self.b[self.index] = self.b[self.index-1]
+        self.mul[self.index] = self.mul[self.index-1]
+        self.add[self.index] = self.add[self.index-1]
 
 
     def addAll(self, inc: int) -> None:
-        self.b[self.index] += inc
+        self.add[self.index] += inc
 
     def multAll(self, m: int) -> None:
-        self.a[self.index] *= m
-        self.b[self.index] *= m
+        self.mul[self.index] *= m
+        self.add[self.index] *= m
+        self.mul[self.index] %= MOD
+        self.add[self.index] %= MOD
 
     def mypow(self, a, p):
         ans = 1
@@ -59,8 +61,8 @@ class Fancy:
     def getIndex(self, idx: int) -> int:
         if idx >= self.index:
             return -1
-        a = self.inv(self.a[idx]) * self.a[self.index]
-        b = (self.b[self.index] - self.b[idx] * a + MOD) % MOD
+        a = self.inv(self.mul[idx]) * self.mul[self.index]
+        b = (self.add[self.index] - self.add[idx] * a + MOD) % MOD
         return (a * self.data[idx] + b) % MOD
 
 

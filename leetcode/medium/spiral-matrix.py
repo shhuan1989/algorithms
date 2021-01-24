@@ -30,7 +30,7 @@ class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         if not matrix or not matrix[0]:
             return list()
-        
+
         rows, columns = len(matrix), len(matrix[0])
         order = list()
         left, right, top, bottom = 0, columns - 1, 0, rows - 1
@@ -46,3 +46,14 @@ class Solution:
                     order.append(matrix[row][left])
             left, right, top, bottom = left + 1, right - 1, top + 1, bottom - 1
         return order
+
+
+if __name__ == '__main__':
+    s = Solution()
+    print(s.spiralOrder([[2, 3]]))
+    print(s.spiralOrder([[1], [2], [3]]))
+    print(s.spiralOrder([
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ]))

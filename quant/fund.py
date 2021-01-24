@@ -273,6 +273,18 @@ if __name__ == '__main__':
     # print(df[['name', 'avg_profit', 'profit_std']].head(10))
     # managers = df.values.tolist()
     # print(managers[:10])
+    df = getfundlist()
+    print(len(df))
+    print(df.columns)
+    print(df.describe())
+
+    df = df.sort_values(by=['three_year_incratio', 'year_incratio'])
+    print(df[:100])
     
-    
-    
+    top_manager = pd.read_csv('./data/topmanager.csv', index_col=0)
+    for url in top_manager[['url']].values.flatten().tolist():
+        get_manager_info(url)
+    top_manager['avg_profit'] = top_manager.apply(lambda row: get_manager_avg_gain(row['url']), axis=1)
+    print(top_manager)
+    top_manager = top_manager.sort_values(by=['avg_profit'], ascending=False)
+    top_manager.to_csv('./data/topmanager.csv', index=True)

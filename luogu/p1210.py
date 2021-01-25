@@ -16,7 +16,6 @@ created by shhuan at 2020/7/25 15:15
 """
 
 
-
 if __name__ == '__main__':
     # sys.stdin = open('p1210.in', 'r')
     text = ''

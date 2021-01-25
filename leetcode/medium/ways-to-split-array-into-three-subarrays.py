@@ -1,52 +1,39 @@
-# -*- coding: utf-8 -*-
+# -*- coding:utf-8 -*-
 
 """
-created by shhuan at 2021/1/3 10:41
-
+created by shuangquan.huang at 2021/1/21
 """
 
-import math
 import collections
+import time
+import os
+import sys
 import bisect
 import heapq
-import time
-import random
 import itertools
-import sys
+from functools import lru_cache
 from typing import List
+from bisect import bisect_left, bisect_right
 
 
 class Solution:
     def waysToSplit(self, nums: List[int]) -> int:
-
-        presum = [0]
-        for v in nums:
-            presum.append(presum[-1] +  v)
-
-        mod = 10**9+7
-
-        ans = 0
+        mod = 10 ** 9 + 7
         n = len(nums)
-        # print(presum)
-        for i in range(1, n+1):
-            if presum[-1] < 3 * presum[i]:
-                break
-            x = presum[i]
-            left = max(bisect.bisect_left(presum, 2 * x), i + 1)
-            right = bisect.bisect_right(presum, (presum[-1] + x) // 2)
-
-            ans += max(0, right - left)
-            # print(i, left, right, ans)
-            ans %= mod
-
-        return ans
+        pre = list(itertools.accumulate(nums))
+        ans = 0
+        for i in range(n):
+            l = max(i + 1, bisect_left(pre, pre[i] + pre[i]))
+            r = min(n - 1, bisect_right(pre, (pre[i] + pre[-1]) // 2))
+            ans = (ans + max(0, r - l)) % mod
+        return ans % mod
 
 
 if __name__ == '__main__':
     s = Solution()
-    print(s.waysToSplit([7,2,5,5,6,2,10,9]))
-    print(s.waysToSplit([5,10,1,10,4]))
-    print(s.waysToSplit([2,3,5,10]))
+    print(s.waysToSplit([7, 2, 5, 5, 6, 2, 10, 9]))
+    print(s.waysToSplit([5, 10, 1, 10, 4]))
+    print(s.waysToSplit([2, 3, 5, 10]))
     print(s.waysToSplit([1, 1, 1]))
-    print(s.waysToSplit([1,2,2,2,5,0]))
+    print(s.waysToSplit([1, 2, 2, 2, 5, 0]))
     print(s.waysToSplit([3, 2, 1]))
